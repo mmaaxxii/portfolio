@@ -17,6 +17,14 @@ pnpm i @types/node
 pnpm i @types/react-router-dom
 
 pnpm i notistack
+
+pnpm i react-on-screen
+
+pnpm i csstype
+
+pnpm i animate.css
+
+
 ```
 
 

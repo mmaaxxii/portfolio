@@ -1,7 +1,7 @@
 export { default as Login } from './Login/Login';
 export * from './Login/services';
-export { default as Portfolio } from './Portfolio/Portfolio';
-export { default as PortfolioWrapper } from './Portfolio/components/PortfolioWrapper';
+export * from './Portfolio';
+export * from './Portfolio/wrapper';
 export * from './Private/Dashboard';
 export * from './Private/Home/adapters';
 export * from './Private/Home/components';

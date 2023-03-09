@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import style from "./portfolioWrapper.module.css"
 
 interface Props {
-    children: React.ReactNode
+    children: JSX.Element | JSX.Element[]
 }
 
 
