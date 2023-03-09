@@ -11,6 +11,8 @@ import { Logout } from './components/Logout'
 const Login = lazy(() => import('./pages/Login/Login'))
 const Private = lazy(() => import('./pages/Private/Private'))
 import Dashboard from './pages/Private/Dashboard/Dashboard';
+import { Home } from './pages'
+import Portfolio from './pages/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -20,9 +22,10 @@ function App() {
           <SnackbarProvider>
             <SnackbarUtilitiesConfigurator />
             <BrowserRouter>
-              <Logout />
+              
               <RoutesWithNotFound>
-                <Route path='/' element={<Navigate to={PrivateRoutes.PRIVATE} />} />
+                <Route path='/' element={<Portfolio />} />
+                <Route path='/asd' element={<Navigate to={PrivateRoutes.PRIVATE} />} />
                 <Route path={PublicRoutes.LOGIN} element={<Login />} />
                 <Route element={<AuthGuard privateValidation={true} />}>
                   <Route path={`${PrivateRoutes.PRIVATE}/*`} element={<Private />} />
