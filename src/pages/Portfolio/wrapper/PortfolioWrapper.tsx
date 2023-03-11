@@ -22,7 +22,7 @@ interface Props {
     <div> 
         <PortfolioWrapperNav>
             <PortfolioWrapperLogo> {logo} </PortfolioWrapperLogo>
-            <button onClick={() => navigate(PublicRoutes.ABOUTME, {replace: true})} className={active === PublicRoutes.ABOUTME ? 'selecetedLink' : 'unselecetedLink'} >About Me</button>
+            <button onClick={() => navigate(PublicRoutes.ABOUTME, {replace: true})} className={active === PublicRoutes.ABOUTME ? 'selecetedLink' : 'unselecetedLink'} ><span>About Me</span></button>
             <button onClick={() => navigate(PublicRoutes.SKILLS, {replace: false})} className={active === PublicRoutes.SKILLS ? 'selecetedLink' : 'unselecetedLink'}>Skills</button>
             <button onClick={() => navigate(PublicRoutes.PROJECTS, {replace: true})}  className={active === PublicRoutes.PROJECTS ? 'selecetedLink' : 'unselecetedLink'}>Projects</button>
             <button onClick={() => navigate("contact", {replace: true})}  className={active === PublicRoutes.CONTACT ? 'selecetedLink' : 'unselecetedLink'}>Contact</button>

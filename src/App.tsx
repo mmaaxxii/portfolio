@@ -7,7 +7,7 @@ import { PrivateRoutes, PublicRoutes, Roles } from './models'
 import { AuthGuard, RoleGuard } from './guards'
 import { RoutesWithNotFound, SnackbarUtilitiesConfigurator } from './utilities'
 import { lazy, Suspense } from 'react'
-import { Portfolio } from './pages'
+import { Portfolio, PortfolioWrapper } from './pages'
 const Login = lazy(() => import('./pages/Login/Login'))
 const Private = lazy(() => import('./pages/Private/Private'))
 const Dashboard =lazy(() => import( './pages/Private/Dashboard/Dashboard'))
@@ -24,11 +24,11 @@ function App() {
               <RoutesWithNotFound>
                 <Route path='/' element={<Portfolio route={PublicRoutes.ABOUTME}/>} />
                 {/*<Route path='/asd' element={<Navigate to={PrivateRoutes.PRIVATE} />} /> */}
-                <Route path={PublicRoutes.LOGIN} element={<Login />} />
                 <Route path={PublicRoutes.ABOUTME} element={<Portfolio route={PublicRoutes.ABOUTME}/>} />
                 <Route path={PublicRoutes.SKILLS} element={<Portfolio route={PublicRoutes.SKILLS}/>} />
                 <Route path={PublicRoutes.PROJECTS} element={<Portfolio route={PublicRoutes.PROJECTS}/>} />
                 <Route path={PublicRoutes.CONTACT} element={<Portfolio route={PublicRoutes.CONTACT}/>} />
+                <Route path={PublicRoutes.LOGIN} element={<Login />} />
                 <Route element={<AuthGuard privateValidation={true} />}>
                   <Route path={`${PrivateRoutes.PRIVATE}/*`} element={<Private />} />
                 </Route>
@@ -44,5 +44,3 @@ function App() {
   )
 }
 export default App
-
-//*<p>{JSON.stringify(user)}</p>
