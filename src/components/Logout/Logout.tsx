@@ -10,7 +10,7 @@ function Logout() {
         dispatch(resetUser());
         navigate(`/${ PublicRoutes.LOGIN }`, { replace: true });
     }
-
+    
     return (    
     <button onClick={logOut}>Log Out</button>
   )

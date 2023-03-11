@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react"
 //import { Container, Row, Col } from "react-bootstrap"
-//import { ArrowRightCircle } from "react-bootstrap-icons"
-//import headerImg from "../assets/img/header-img.svg"
+import { ArrowRightCircle } from "react-bootstrap-icons"
+import headerImg from "./assets/img/header-img.png"
 import 'animate.css' 
 import TrackVisibility from 'react-on-screen';
+import style from "./aboutMe.module.css"; 
+import {AboutMeSection, AboutMeDivJustifyCenter, AboutMeSpan, AboutMeH1, AboutMeP, AboutMeButton, AboutMeImg, AboutMeSpanTxtRotate} from "./styled-components/aboutMe.styled";
+
 
 
 
@@ -15,6 +18,7 @@ export const AboutMe = () => {
     const [delta, setDelta] = useState(300- Math.random() * 100)
     const [index, setIndex] = useState(1);
     const period = 2000;
+    const [isVisible, setIsVisible] = useState(true)
 
     useEffect(() => {
         let ticker = setInterval( () =>{
@@ -40,24 +44,25 @@ export const AboutMe = () => {
             setIsDeleting(false)
             setLoopNum(loopNum + 1 )
             setIndex(1)
-            setDelta(500)
+            setDelta(350)
             
         }else {
             setIndex(prevIndex => prevIndex + 1);
         }
     }
         return(
-            <section className="banner" id="home">
-            <div>
-              <div className="aligh-items-center">
+            <AboutMeSection id="home">
+            
+              <AboutMeDivJustifyCenter>
                 <div>
                   <TrackVisibility>
                     {({ isVisible }) =>
-                    <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                      <span className="tagline">Welcome to my Portfolio</span>
-                      <h1>{`Hi! I'm Maxi`} <span className="txt-rotate" data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "Sys Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                        <p>System engineer, senior experience with the framework Genexus developing. </p>
-                        <button onClick={() => console.log('connect')}>Let's Connect </button>
+                    <div className={isVisible ? "animate__animated animate__jello" : ""}>
+                      <AboutMeSpan>Welcome to my Portfolio</AboutMeSpan>
+                      <AboutMeH1>{`Hi! I'm Maxi, `} </AboutMeH1>
+                      <AboutMeH1> <span data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "Sys Engineer" ]'><AboutMeSpanTxtRotate>{text}</AboutMeSpanTxtRotate></span></AboutMeH1>
+                        <AboutMeP>System engineer, senior experience with the framework Genexus developing. </AboutMeP>
+                        <AboutMeButton onClick={() => console.log('connect')}>Let's Connect  <ArrowRightCircle size={25} /></AboutMeButton>
                     </div>}
                   </TrackVisibility>
                 </div>
@@ -65,13 +70,13 @@ export const AboutMe = () => {
                   <TrackVisibility>
                     {({ isVisible }) =>
                       <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                        <img src={''} alt="Header Img"/>
+                        <AboutMeImg src={headerImg} alt="Header Img"/>
                       </div>}
                   </TrackVisibility>
                 </div>
-              </div>
-            </div>
-          </section>
+              </AboutMeDivJustifyCenter>
+            
+          </AboutMeSection>
           
         )
 

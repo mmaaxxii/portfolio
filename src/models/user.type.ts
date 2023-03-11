@@ -22,7 +22,7 @@ interface Origin {
 
 export interface ApiUser {
     
-        id: number,
+        id: number
         name: string
         status: string
         species: string
@@ -43,7 +43,7 @@ const ApiUserEmptyStateOrigin = {
 }
 
 export const ApiUserEmptyState: ApiUser = {
-    id: 2,
+    id: 0,
     name: "",
     status: "",
     species: "",

@@ -1,19 +1,25 @@
-import { AboutMe } from "./components"
-import  { PortfolioWrapper } from "./wrapper"
-import { lazy } from 'react';
-
-const Skills = lazy(() => import('./components/skills/Skills'));
-const Projects = lazy(() => import('./components/projects/Projects'));
-const ContactMe = lazy(() => import('./components/contact-me/ContactMe'));
+import { PortfolioWrapper, PortfolioWrapperChild } from "./wrapper"
+import { lazy, useState } from 'react';
+import { PublicRoutes } from "@/models";
 
 
-export default function Portfolio() {
+import { useEffect } from 'react';
+
+interface Props {
+  route: string
+}
+
+export default function Portfolio({ route }: Props): JSX.Element {
+  const [intRoute, setIntRoute] = useState<string>(route)
+
+  useEffect(() => {
+
+    console.log(route)
+  }, [route])
+
   return (
-    <PortfolioWrapper> 
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <ContactMe /> 
-    </PortfolioWrapper>)
-
+    <PortfolioWrapper active={route}>
+        <PortfolioWrapperChild route={route}/>
+      </PortfolioWrapper>
+  )
 }

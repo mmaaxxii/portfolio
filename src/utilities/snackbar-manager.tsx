@@ -9,7 +9,7 @@ export const SnackbarUtilitiesConfigurator: React.FC = ( ) => {
 
 export const SnackbarUtilities = {
     toast(msg: string, variant: VariantType = "default") {  
-        useSnackbarRef.enqueueSnackbar(msg, {variant: variant});
+        useSnackbarRef.enqueueSnackbar(msg, {variant: variant, preventDuplicate: true});
     }, 
 
     success(msg: string)  {

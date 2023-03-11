@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { User } from '../models';
-import  userSlide  from './slices/user.slice';
+import  userSlice  from './slices/user.slice';
 
 export interface AppStore {
     user: User;
@@ -8,6 +8,6 @@ export interface AppStore {
 
 export default configureStore<AppStore>({
     reducer: {
-        user: userSlide,
+        user: userSlice,
     }
 })
