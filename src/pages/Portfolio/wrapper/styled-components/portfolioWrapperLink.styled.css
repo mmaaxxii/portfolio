@@ -3,5 +3,13 @@
 }
 
 .unselecetedLink {
-    color: default;
+
+   color: white;
+
 }
+
+.unselecetedLinkMobile {
+
+    color: black;
+ 
+ }

@@ -1,3 +1,4 @@
+import { PublicRoutes } from '@/models';
 import { lazy } from 'react';
 
 const AboutMe = lazy(() => import('../components/about-me/AboutMe'));
@@ -11,15 +12,15 @@ interface Props {
 
 export default function PortfolioWrapperChild({route}: Props): JSX.Element {
     switch (route) {
-        case "aboutme":
+        case PublicRoutes.ABOUTME:
         return <AboutMe />
-        case "skills":
+        case PublicRoutes.SKILLS:
         return <Skills />
-        case "projects":
+        case PublicRoutes.PROJECTS:
         return <Projects />
-        case "contact":
-        return <Contact />
-        default:
+        case PublicRoutes.CONTACT:
+        return <Contact/>
+        default: 
         return <AboutMe />
     }
 }
