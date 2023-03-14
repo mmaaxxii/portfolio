@@ -37,15 +37,16 @@ interface Props {
 
   const handleClickTheme = () => {
     if (colorScheme === 'dark') {
+      console.log(colorScheme)
       document.querySelector('html')?.setAttribute('data-theme', 'light')
       setColorScheme('light')
-      persistLocalStorage('color-scheme', 'light')
+      localStorage.setItem('color-scheme', 'light')
       
     } else {
-      
+      console.log(colorScheme)
       document.querySelector('html')?.setAttribute('data-theme', 'dark')
       setColorScheme('dark')
-      persistLocalStorage('color-scheme', 'dark')
+      localStorage.setItem('color-scheme', 'dark')
       
     }
   }
@@ -60,7 +61,7 @@ interface Props {
               <a onClick={() => (handleClickLink(PublicRoutes.PROJECTS))}  className={activeRoute === PublicRoutes.PROJECTS ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>Projects</a>
               <a onClick={() => (handleClickLink(PublicRoutes.CONTACT))}  className={activeRoute === PublicRoutes.CONTACT ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>Contact</a>
             </div>
-            <button id="switch" className="switch" onClick={handleClickTheme}>{colorScheme === 'dark' ? <MoonFill size={25}/> : <SunFill size={25}/>}</button>
+            <button id="switch" className="switch" onClick={handleClickTheme}>{colorScheme === 'dark' ?  <SunFill size={25}/>:<MoonFill size={25}/> }</button>
             <div className="burguer">
               <BurguerButton clicked={clicked} handleClick={handleClick}/>
             </div>

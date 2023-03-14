@@ -40,6 +40,10 @@ a:hover {
   color: #f30889;
 }
 
+span {
+  color: var(--color);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #ffffff;

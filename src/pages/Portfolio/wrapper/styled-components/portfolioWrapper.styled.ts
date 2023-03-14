@@ -75,6 +75,13 @@ export const PortfolioWrapperNav = styled.nav`
     .switch {
         background-color: var(--bg);
         color: var(--color);
+        @media (max-width: 768px) {
+            position: relative;
+            display: inline-block;
+            background-color: transparent;
+            margin-left: 70%;
+            vertical-align: 0mm;
+    }
     }
 
 
