@@ -1,17 +1,16 @@
 import { SnackbarProvider } from 'notistack'
-import { Provider, useSelector } from 'react-redux'
+import { Provider } from 'react-redux'
 import './App.css'
-import store, { AppStore } from './redux/store'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import store from './redux/store'
+import { BrowserRouter,  Route } from 'react-router-dom'
 import { PrivateRoutes, PublicRoutes, Roles } from './models'
 import { AuthGuard, RoleGuard } from './guards'
 import { RoutesWithNotFound, SnackbarUtilitiesConfigurator } from './utilities'
 import { lazy, Suspense } from 'react'
-import { Portfolio, PortfolioWrapper } from './pages'
+import { Portfolio } from './pages'
 const Login = lazy(() => import('./pages/Login/Login'))
 const Private = lazy(() => import('./pages/Private/Private'))
 const Dashboard =lazy(() => import( './pages/Private/Dashboard/Dashboard'))
-//const Portfolio =lazy(() => import( './pages/Portfolio/Portfolio'))
 
 function App() {
   return (

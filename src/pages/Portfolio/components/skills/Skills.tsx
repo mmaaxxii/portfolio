@@ -1,5 +1,5 @@
 export default function Skills() {
   return (
-    <div id="skills">SkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkillsSkills</div>
+    <div id="skills">Skills</div>
   )
 }

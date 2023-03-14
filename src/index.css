@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
 }
 
 body {
@@ -21,6 +22,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color: var(--color);
+  background-color: var(--bg);
 }
 
 @media (min-width:1700px) {
@@ -30,12 +33,46 @@ body {
 	}
 }
 
+a {
+  color: var(--color);
+}
+a:hover {
+  color: #f30889;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  a {
+    color: #ffffff;
+  }
+  a:hover {
+    color: #f30889;
+  }
+  button {
+    background-color: var(--bg);
+    color: var(--color)
+  }
+}
+
+[data-theme= "dark"] {
+  --bg : #000000;
+  --color: #ffffff;
+
+}
+
+[data-theme= "light"] {
+  --bg : #ffffff;
+  --color: #000000;
+  
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  nav button {
     color: #213547;
     background-color: #ffffff;
   }
@@ -48,25 +85,5 @@ body {
   }
   button {
     background-color: #f9f9f9;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #ffffff;
-    background-color: #000000;
-  }
-  nav button {
-    color: #ffffff;
-    background-color: #000000;
-  }
-  a {
-    color: #ffffff;
-  }
-  a:hover {
-    color: #f30889;
-  }
-  button {
-    background-color: #1f1f1f;
   }
 }

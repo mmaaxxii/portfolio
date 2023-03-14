@@ -12,9 +12,10 @@ export const PortfolioWrapperNav = styled.nav`
     z-index: 100;
 
     h2 {
-        font-weight: 400;
+        font-weight: 1000;
         span {
-            font-weight: bold;
+            font-weight: 200;
+            color: #f30889;
         }
     }
     a {
@@ -71,7 +72,9 @@ export const PortfolioWrapperNav = styled.nav`
             display: none;
          }
     }
-    
+    .switch {
+        z-index: 0;
+    }
 
  `;
 
@@ -91,7 +94,7 @@ height: 100%;
 z-index: 1;
 transition: all .6s ease;
 @media (min-width: 768px) {
-            
+            display: none;
     }
 &.active {
     border-radius: 0 0 80% 0;

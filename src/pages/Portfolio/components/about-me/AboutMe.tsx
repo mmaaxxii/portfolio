@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react"
-//import { Container, Row, Col } from "react-bootstrap"
-import { ArrowRightCircle } from "react-bootstrap-icons"
+import styled from "styled-components";
+import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "./assets/img/header-img.png"
 import 'animate.css' 
 import TrackVisibility from 'react-on-screen';
-import style from "./aboutMe.module.css"; 
 import {AboutMeSection, AboutMeDivJustifyCenter, AboutMeSpan, AboutMeH1, AboutMeP, AboutMeButton, AboutMeImg, AboutMeSpanTxtRotate} from "./styled-components/aboutMe.styled";
+
 
 
 
@@ -62,7 +62,7 @@ export const AboutMe = () => {
                       <AboutMeH1>{`Hi! I'm Maxi, `} </AboutMeH1>
                       <AboutMeH1> <span data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "Sys Engineer" ]'><AboutMeSpanTxtRotate>{text}</AboutMeSpanTxtRotate></span></AboutMeH1>
                         <AboutMeP>System engineer, senior experience with the framework Genexus developing. </AboutMeP>
-                        <AboutMeButton onClick={() => console.log('connect')}>Let's Connect  <ArrowRightCircle size={25} /></AboutMeButton>
+                        <AboutMeButton onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25}/>  </AboutMeButton>
                     </div>}
                   </TrackVisibility>
                 </div>

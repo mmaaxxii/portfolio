@@ -2,14 +2,18 @@
     color: #f30889;
 }
 
-.unselecetedLink {
-
-   color: white;
-
+.unselecetedLinkWebDark {
+   color: white
 }
 
-.unselecetedLinkMobile {
+.unselecetedLinkMob {
+   color: white
+}
 
-    color: black;
- 
- }
+.unselecetedLinkWebLight {
+   color: black
+}
+
+.unselecetedLinkMob {
+   color: white
+}
