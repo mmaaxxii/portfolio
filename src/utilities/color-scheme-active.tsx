@@ -6,8 +6,8 @@ export const  ColorSchemeActive = (): string => {
         let colorScheme = localStorage.getItem('color-scheme')?.toString() as string
         return colorScheme 
     } else {
-        persistLocalStorage('color-scheme', 'dark')
-        return 'dark'
+        persistLocalStorage('color-scheme', 'light')
+        return 'light'
     }
     
 }

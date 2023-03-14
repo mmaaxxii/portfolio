@@ -73,8 +73,10 @@ export const PortfolioWrapperNav = styled.nav`
          }
     }
     .switch {
-        z-index: 0;
+        background-color: var(--bg);
+        color: var(--color);
     }
+
 
  `;
 

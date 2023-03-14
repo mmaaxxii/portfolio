@@ -1,19 +1,20 @@
-.selecetedLink {
-    color: #f30889;
-}
 
-.unselecetedLinkWebDark {
+.selectedLink {
+   color: #f30889;
+   }
+
+   .unselecetedLinkWebDark {
    color: white
-}
+   }
 
-.unselecetedLinkMob {
+   .unselecetedLinkMob {
    color: white
-}
+   }
 
-.unselecetedLinkWebLight {
+   .unselecetedLinkWebLight {
    color: black
-}
+   }
 
-.unselecetedLinkMob {
+   .unselecetedLinkMob {
    color: white
-}
+   }

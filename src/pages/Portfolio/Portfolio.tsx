@@ -7,7 +7,6 @@ interface Props {
 export default function Portfolio({ route }: Props): JSX.Element {
  
 return (
-    
       <PortfolioWrapper active={route}>
           <PortfolioWrapperChild/>
       </PortfolioWrapper>
