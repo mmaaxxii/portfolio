@@ -59,10 +59,10 @@ export const AboutMe = () => {
                     {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__jello" : ""}>
                       <AboutMeSpan>Welcome to my Portfolio</AboutMeSpan>
-                      <AboutMeH1>{`Hi! I'm Maxi, `} </AboutMeH1>
+                      <AboutMeH1>{`Hi! I'm Max, `} </AboutMeH1>
                       <AboutMeH1> <span data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "Sys Engineer" ]'><AboutMeSpanTxtRotate>{text}</AboutMeSpanTxtRotate></span></AboutMeH1>
-                        <AboutMeP>System engineer, senior experience with the framework Genexus developing. </AboutMeP>
-                        <AboutMeButton onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25}/>  </AboutMeButton>
+                        <AboutMeP>System engineer, senior Genexus developer, more than 10 years producing code. </AboutMeP>
+                        <AboutMeButton onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={50}/>  </AboutMeButton>
                     </div>}
                   </TrackVisibility>
                 </div>

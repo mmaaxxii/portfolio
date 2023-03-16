@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 
 export const AboutMeSection = styled.section ` 
-        margin-top: 0;
-        padding: 0px 0 150px 0;
+        height: 100%;
+        margin-top: 50px;
+        padding: 0px 0 0 0;
         background-position: top center;
         background-size: cover;     
         background-repeat: no-repeat;
@@ -53,9 +54,11 @@ export const AboutMeP = styled.p `
  `;
 
 export const AboutMeButton = styled.button ` 
-    color: white;
-    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    
+    padding: 10px;
+    background: linear-gradient(90.21deg, rgba(243, 8, 137, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
     font-weight: 700;
+    color: var(--color);
     font-size: 20px;
     margin-top: 60px;
     margin-left: 20px;
