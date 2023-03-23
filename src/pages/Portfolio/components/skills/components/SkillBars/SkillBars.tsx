@@ -2,7 +2,9 @@ import { SkillBarsGeneralDiv } from "./styled-components"
 export default function SkillBars() {
   return (
     <SkillBarsGeneralDiv className="skill">
-        <h1>my Skills</h1>
+        
+        <h4><span>.</span>Skills</h4>
+
         <li>
             <h3>html</h3>
             <span className="bar"><span className="html"></span></span>
@@ -33,6 +35,7 @@ export default function SkillBars() {
         </li>
         <li>
             <h3>genexus</h3>
+        
             <span className="bar"><span className="genexus"></span></span>
         </li>
     </SkillBarsGeneralDiv>

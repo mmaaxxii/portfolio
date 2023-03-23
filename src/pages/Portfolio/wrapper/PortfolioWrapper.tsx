@@ -57,7 +57,7 @@ interface Props {
             <h2>{start}<span>{mid}</span>{end}</h2> 
             <div className={`links ${clicked ? 'active' : ''}`}>
               <a onClick={() => (handleClickLink(PublicRoutes.ABOUTME))} className={activeRoute === PublicRoutes.ABOUTME ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>AboutMe</a>
-              <a onClick={() => (handleClickLink(PublicRoutes.SKILLS))} className={activeRoute === PublicRoutes.SKILLS ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>Skills</a>
+              <a onClick={() => (handleClickLink(PublicRoutes.SKILLS))} className={activeRoute === PublicRoutes.SKILLS ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>Experience</a>
               <a onClick={() => (handleClickLink(PublicRoutes.PROJECTS))}  className={activeRoute === PublicRoutes.PROJECTS ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>Projects</a>
               <a onClick={() => (handleClickLink(PublicRoutes.CONTACT))}  className={activeRoute === PublicRoutes.CONTACT ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>Contact</a>
             </div>

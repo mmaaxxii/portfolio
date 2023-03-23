@@ -10,6 +10,7 @@ export const PortfolioWrapperNav = styled.nav`
     position: fixed;
     top: 0;
     z-index: 100;
+    background-color: var(--bg);
 
     h2 {
         font-weight: 1000;

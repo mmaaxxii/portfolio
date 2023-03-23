@@ -89,12 +89,8 @@ export const ContactSection = styled.section`
             font-size: 1.25rem;
             transition: 0.3s;
         }
-        
-        
     }
 
-    
-    
     .contact-input {
         width: 100%;
         background-color: var(--input-bg);
@@ -189,6 +185,7 @@ export const ContactSection = styled.section`
     .image-wrapper {
         position: relative;
         grid-column: 2;
+        
         .img {
         position: absolute;
         height: 100%;
@@ -196,6 +193,9 @@ export const ContactSection = styled.section`
         top: 50%;
         transform: translate(-50%, -50%);
         }
+
+        
+    }
         .wave-wrap {
         position: absolute;
         width: 100%;
@@ -212,7 +212,7 @@ export const ContactSection = styled.section`
 
         }
         }
-    }
+    
     
     
     #wave {

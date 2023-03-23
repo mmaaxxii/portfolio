@@ -4,8 +4,8 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "./assets/img/header-img.png"
 import 'animate.css' 
 import TrackVisibility from 'react-on-screen';
-import {AboutMeSection, AboutMeDivJustifyCenter, AboutMeSpan, AboutMeH1, AboutMeP, AboutMeButton, AboutMeImg, AboutMeSpanTxtRotate} from "./styled-components/aboutMe.styled";
-
+import {AboutMeSection, AboutMeDivJustifyCenter, AboutMeSpan, AboutMeH1, AboutMeP, AboutMeButton, AboutMeImg, AboutMeSpanTxtRotate } from "./styled-components/aboutMe.styled";
+import { ColorSchemeActive } from "@/utilities";
 
 
 
@@ -19,7 +19,8 @@ export const AboutMe = () => {
     const [index, setIndex] = useState(1);
     const period = 2000;
     const [isVisible, setIsVisible] = useState(true)
-
+    const [colorScheme, setColorScheme] = useState<string>(ColorSchemeActive()) 
+    
     useEffect(() => {
         let ticker = setInterval( () =>{
             tick();
@@ -75,7 +76,6 @@ export const AboutMe = () => {
                   </TrackVisibility>
                 </div>
               </AboutMeDivJustifyCenter>
-            
           </AboutMeSection>
           
         )

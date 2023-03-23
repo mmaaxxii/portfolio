@@ -3,17 +3,23 @@ import styled from "styled-components";
 export const SkillBarsGeneralDiv = styled.div `
     list-style: none;
     text-transform: uppercase;
-
-    .skill{ 
-    width: 500px;
-    margin: 60px auto;
-    color: #fff;
+    width: 30%;
+    margin: 0px auto;
+    color: var(--color);
     padding: 20px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    & li {
-        margin: 20px 0;
-        padding: 10px;
+    
+     li {
+        margin: 5px 0;
+        padding: 5px;
     }
+    
+    h4 {
+        text-align: left;
+    }
+
+    span {
+        color: var(--main-color);
+        font-size: 4rem;
     }
 
     .bar { 
@@ -36,14 +42,49 @@ export const SkillBarsGeneralDiv = styled.div `
 
     }
     .html { 
-        width: 90%;
+        width: 80%;
         animation: html 3s;
     }
+    @keyframes html {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 80%;
+        }
+    }
+
     .css { 
-        width: 30%;
+        width: 50%;
         animation: css 3s;
     }
-    @keyframes html {
+    @keyframes css {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 50%;
+        }
+    }
+
+    .js { 
+        width: 80%;
+        animation: js 3s;
+    }
+    @keyframes js {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 80%;
+        }
+    }
+
+    .react { 
+        width: 90%;
+        animation: react 3s;
+    }
+    @keyframes react {
         0% {
             width: 0%;
         }
@@ -51,6 +92,58 @@ export const SkillBarsGeneralDiv = styled.div `
             width: 90%;
         }
     }
+    .ts { 
+        width: 60%;
+        animation: ts 3s;
+    }
+    @keyframes ts {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 60%;
+        }
+    }
+
+    .poo { 
+        width: 80%;
+        animation: poo 3s;
+    }
+    @keyframes poo {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 80%;
+        }
+    }
+    .sql { 
+        width: 50%;
+        animation: sql 3s;
+    }
+    @keyframes sql {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 50%;
+        }
+    }
+
+    .genexus { 
+        width: 100%;
+        animation: genexus 3s;
+    }
+    @keyframes genexus {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+    
 
     h1 {
         text-align: center;

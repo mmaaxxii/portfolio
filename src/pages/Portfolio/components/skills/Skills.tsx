@@ -1,10 +1,20 @@
 
-import { SkillBars } from './components';
+import { SkillBars, TimeLine } from './components';
+import { SkillsSection , SkillsHeader} from './styled-components';
+import 'animate.css';
 
 export default function Skills() {
   return (
-    <div id="skills">
+    <>
+    <SkillsHeader> 
+      <div className='animate__animated animate__backInDown' >
+        <h1> my<span>Ex</span>perience </h1>
+      </div>
+    </SkillsHeader>
+    <SkillsSection  id="skills">
       <SkillBars/>
-    </div>
+      <TimeLine/>
+    </SkillsSection>
+    </>
   )
 }
