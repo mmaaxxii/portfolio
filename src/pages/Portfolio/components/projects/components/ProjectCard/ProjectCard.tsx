@@ -8,7 +8,7 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { deepOrange } from '@mui/material/colors';
+import { pink } from '@mui/material/colors';
 
 import ComputerIcon from '@mui/icons-material/Computer';
 import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
@@ -59,10 +59,10 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 		setExpanded(!expanded);
 	};
 	return (
-		<Card sx={{ maxWidth: 345 }} >
+		<Card >
 			<CardHeader
 				avatar={
-					<Avatar sx={{ bgcolor: deepOrange[500] }} aria-label="recipe">
+					<Avatar sx={{ bgcolor: '#f30889'}} aria-label="recipe">
 						{logo}
 					</Avatar>
 				}
