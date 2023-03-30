@@ -24,7 +24,7 @@ export const TimeLineHeader = styled.div`
         text-align: left;
      }
     span {
-        font-size: 4rem;
+        font-size: 2rem;
         color: var(--main-color);
     }
 `

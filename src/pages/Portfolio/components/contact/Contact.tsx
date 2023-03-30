@@ -44,14 +44,14 @@ import 'animate.css';
               </div>
               <div className='animate__animated animate__fadeIn'>
                 <form action='index.html' method='post' className='contact-form'> 
-                  <div className='input-wrap'> 
+                  <div className='input-wrap w-100'> 
                     <input className='contact-input' type='text' autoComplete='off' name='FirstName'  required >  
                     </input>
                     <label>First Name</label>
                     <FontAwesomeIcon icon={faAddressCard} />
                   </div>
 
-                  <div className='input-wrap'> 
+                  <div className='input-wrap w-100'> 
                     <input className='contact-input' type='text' autoComplete='off' name='LastName'  required > 
                     </input>
                     <label>Last Name</label>

@@ -6,6 +6,7 @@ export const ContactSection = styled.section`
     width: 100%;
     overflow: hidden;
     background-color: var(--bg);
+    
     .container {
         height: 100vh;
         min-height: 700px;

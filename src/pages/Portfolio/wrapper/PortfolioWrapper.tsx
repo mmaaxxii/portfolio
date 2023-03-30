@@ -17,8 +17,8 @@ interface Props {
 
  function PortfolioWrapper({active, children} : Props) {
   const start  = "<"
-  const mid = " ME "
-  const end = " />"
+  const mid = "ME"
+  const end = "/>"
   const navigate = useNavigate()
   const [activeRoute, setActiveRoute] = useState<string>(PublicRoutes.ABOUTME)
   const {updateRoute} = useContext(WrapperContext)  

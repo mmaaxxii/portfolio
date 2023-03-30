@@ -11,9 +11,11 @@ export default function Skills() {
         <h1> my<span>Ex</span>perience </h1>
       </div>
     </SkillsHeader>
-    <SkillsSection  id="skills">
-      <SkillBars/>
-      <TimeLine/>
+    <SkillsSection >
+     <SkillBars /> 
+      <div className='animate__animated animate__backInUp' >
+        <TimeLine/>
+      </div>
     </SkillsSection>
     </>
   )

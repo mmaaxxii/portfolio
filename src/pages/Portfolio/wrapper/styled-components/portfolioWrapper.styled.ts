@@ -11,8 +11,9 @@ export const PortfolioWrapperNav = styled.nav`
     top: 0;
     z-index: 100;
     background-color: var(--bg);
-
+    
     h2 {
+        
         font-weight: 1000;
         span {
             font-weight: 200;
@@ -24,6 +25,7 @@ export const PortfolioWrapperNav = styled.nav`
             margin-right: 1rem;
     }
     .links {
+        
         position: absolute;
         top: -700px;
         left: -1000px;
@@ -32,6 +34,7 @@ export const PortfolioWrapperNav = styled.nav`
         margin-right: auto;
         text-align: center;
         transition: all .5s ease;
+        
         a {
             display: block;
             font-size: 2rem;
@@ -50,8 +53,9 @@ export const PortfolioWrapperNav = styled.nav`
             }
 
         }
+        
     }
-
+    
     .links.active {
         width: 100%;
         display: block;
@@ -62,6 +66,7 @@ export const PortfolioWrapperNav = styled.nav`
         left: 0;
         right: 0;
         text-align: center;
+        
         a{
             font-size: 2rem;
             margin-top: 1rem;
@@ -69,6 +74,7 @@ export const PortfolioWrapperNav = styled.nav`
     }
 
     .burguer {
+        
         @media (min-width: 768px) {
             display: none;
          }
@@ -80,7 +86,7 @@ export const PortfolioWrapperNav = styled.nav`
             position: relative;
             display: inline-block;
             background-color: transparent;
-            margin-left: 70%;
+            margin-left: 50%;
             vertical-align: 0mm;
     }
     }
@@ -89,7 +95,6 @@ export const PortfolioWrapperNav = styled.nav`
  `;
 
 export const PortfolioWrapperLogo = styled.div ` 
-    width: 250px;
     
 `;
 
@@ -97,17 +102,17 @@ export const BgDiv = styled.div `
 position: absolute;
 background-color: #444;
 top: -100px;
-left: -2000px;
+left: -1000px;
 right: 0;
 width: 100%;
 height: 100%;
-z-index: 1;
+z-index: 4;
 transition: all .6s ease;
 @media (min-width: 768px) {
             display: none;
     }
 &.active {
-    border-radius: 0 0 80% 0;
+    border-radius: 0 0 60% 0;
     top: 0;
     left: 0;
     width: 100%;

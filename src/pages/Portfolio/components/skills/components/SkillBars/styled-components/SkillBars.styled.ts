@@ -3,11 +3,18 @@ import styled from "styled-components";
 export const SkillBarsGeneralDiv = styled.div `
     list-style: none;
     text-transform: uppercase;
-    width: 30%;
+    width: 40%;
     margin: 0px auto;
     color: var(--color);
     padding: 20px;
     
+    @media (max-width:768px) {
+	
+		width: 90%;
+		
+	}
+
+
      li {
         margin: 5px 0;
         padding: 5px;
@@ -19,7 +26,8 @@ export const SkillBarsGeneralDiv = styled.div `
 
     span {
         color: var(--main-color);
-        font-size: 4rem;
+        font-size: 2rem;
+        
     }
 
     .bar { 

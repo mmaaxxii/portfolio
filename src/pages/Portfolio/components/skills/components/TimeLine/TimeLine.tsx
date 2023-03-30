@@ -36,8 +36,8 @@ export default function CustomizedTimeline() {
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <h1 className='animate__animated animate__backInRight' >Junior Genexus Developer</h1>
-                        <p className='animate__animated animate__backInRight' >Working for local business</p>
+                        <h1 >Junior Genexus Developer</h1>
+                        <p  >Working for local business</p>
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
@@ -56,10 +56,10 @@ export default function CustomizedTimeline() {
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <h1 className='animate__animated animate__fadeIn'>
+                        <h1 >
                             Sys engineer
                         </h1>
-                        <p className='animate__animated animate__fadeIn'>Graduate from UTN-FRT 🇦🇷</p>
+                        <p >Graduate from UTN-FRT 🇦🇷</p>
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
@@ -79,10 +79,10 @@ export default function CustomizedTimeline() {
                         <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <h1 className='animate__animated animate__backInRight'>
+                        <h1 >
                             Senior Genexus Developer
                         </h1>
-                        <p className='animate__animated animate__backInRight'>Certified by Genexus </p>
+                        <p >Certified by Genexus </p>
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
@@ -101,10 +101,10 @@ export default function CustomizedTimeline() {
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <h1 className='animate__animated animate__fadeIn'>
+                        <h1 >
                             React Developer
                         </h1>
-                        <p className='animate__animated animate__fadeIn'>Learning by my own!</p>
+                        <p >Learning by my own!</p>
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>
