@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 
 export const TimeLineContainer = styled.div`
+     width: 90%;
+     margin-top: 30px;
      
      h1 { 
         padding: 10px;
@@ -20,7 +22,7 @@ export const TimeLineContainer = styled.div`
 export const TimeLineHeader = styled.div`
 
     h4 { 
-        padding: 10px;
+        
         text-align: left;
      }
     span {

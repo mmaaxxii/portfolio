@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SkillBarsGeneralDiv = styled.div `
     list-style: none;
     text-transform: uppercase;
-    width: 40%;
+    width: 90%;
     margin: 0px auto;
     color: var(--color);
     padding: 20px;

@@ -24,6 +24,8 @@ interface Props {
   const {updateRoute} = useContext(WrapperContext)  
   const [colorScheme, setColorScheme] = useState<string>(ColorSchemeActive())
   const [clicked, setClicked] = useState(false)
+  const allElements = document.querySelectorAll("*");
+
   const handleClick = () => {
     setClicked(!clicked)
   }
@@ -36,14 +38,25 @@ interface Props {
   }
 
   const handleClickTheme = () => {
+
+    allElements.forEach((element) => {
+      element.classList.add("transition");
+      setTimeout(() => {
+        element.classList.remove("transition");
+      }
+      , 1000);
+      
+    });
+
     if (colorScheme === 'dark') {
-      console.log(colorScheme)
-      document.querySelector('html')?.setAttribute('data-theme', 'light')
+      
+
+      document.querySelector('html')?.setAttribute('data-theme', 'light' )
       setColorScheme('light')
       localStorage.setItem('color-scheme', 'light')
       
     } else {
-      console.log(colorScheme)
+      
       document.querySelector('html')?.setAttribute('data-theme', 'dark')
       setColorScheme('dark')
       localStorage.setItem('color-scheme', 'dark')

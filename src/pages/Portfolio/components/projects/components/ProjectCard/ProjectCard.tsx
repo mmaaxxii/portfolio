@@ -1,22 +1,20 @@
-import React from 'react';
+import Avatar from '@mui/material/Avatar';
 import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import { pink } from '@mui/material/colors';
-
+import React from 'react';
+import { ColorSchemeActive } from "@/utilities"
 import ComputerIcon from '@mui/icons-material/Computer';
 import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { styled } from '@mui/material/styles';
-import { AlignCenter } from 'react-bootstrap-icons';
+import { ProjectCardContainer } from './styled-components';
 
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -53,12 +51,14 @@ interface Props {
 
 
 function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, mobile }: Props): JSX.Element {
+	const [colorScheme, setColorScheme] = React.useState<string>(ColorSchemeActive());
 	const [expanded, setExpanded] = React.useState(false);
 
 	const handleExpandClick = () => {
 		setExpanded(!expanded);
 	};
 	return (
+		<ProjectCardContainer>
 		<Card >
 			<CardHeader
 				avatar={
@@ -71,9 +71,11 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 						<MoreVertIcon />
 					</IconButton>
 				}
-				title={title}
-				subheader={date}
+				title={<h2>{title}</h2>}
+				subheader={<small>{date}</small>}
+				sx = { { bgcolor: 'var(--bg)'}}
 			/>
+			
 			<CardMedia
 				component="img"
 				height="194"
@@ -81,9 +83,9 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 				alt={alt}
 			/>
 			<CardContent>
-				<Typography variant="body2" color="text.secondary">
+				<h5>
 					{short}
-				</Typography>
+				</h5>
 			</CardContent>
 			<CardActions disableSpacing>
 				{
@@ -118,13 +120,13 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 			</CardActions>
 			<Collapse in={expanded} timeout="auto" unmountOnExit>
 				<CardContent>
-					<Typography paragraph>
+					<p>
 						{detail}
-					</Typography>
+					</p>
 				</CardContent>
 			</Collapse>
 		</Card>
-
+		</ProjectCardContainer>
 	);
 };
 

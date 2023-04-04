@@ -44,6 +44,10 @@ span {
   color: var(--color);
 }
 
+.transition {
+  transition: 1s cubic-bezier(0.4, 0.1, 0.4, 1) !important;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #ffffff;

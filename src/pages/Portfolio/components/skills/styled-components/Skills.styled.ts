@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const SkillsSection = styled.section`
     z-index: -2;
-    margin-top: 10px;
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
