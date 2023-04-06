@@ -25,6 +25,8 @@ function Login() {
   return (
     <div>
         <h1> WELCOME TO THE LOGIN </h1>
+        <h2> I want to show you some extra skills that I already know </h2>
+        <h2> I want to show you some extra skills that I already know </h2>
         <button onClick={login}>Login</button>
     </div>
   )

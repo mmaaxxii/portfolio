@@ -5,10 +5,12 @@ export const PublicRoutes = {
     SKILLS: '/skills',
     PROJECTS: '/projects',
     CONTACT: '/contact',
+    
 }
 
 export const PrivateRoutes = {
     PRIVATE: 'Private',
     DASHBOARD: 'Dashboard',
     HOME: 'Home',
+    SIGNOUT: 'Signout',
 }

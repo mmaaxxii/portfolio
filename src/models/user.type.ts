@@ -5,6 +5,7 @@ export interface User {
     id: string 
     name: string
     email?: string
+    uid?: string
     role?: Roles
 }
 
@@ -12,6 +13,7 @@ export const UserEmptyState: User = {
     id: '',
     name: '',
     email: '',
+    uid: '',
     role: Roles.USER
 };
 
