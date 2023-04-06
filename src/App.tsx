@@ -11,6 +11,7 @@ import { Portfolio } from './pages'
 const Login = lazy(() => import('./pages/Login/Login'))
 const Private = lazy(() => import('./pages/Private/Private'))
 const Dashboard =lazy(() => import( './pages/Private/Dashboard/Dashboard'))
+const AdminDashboard = lazy(() => import('./pages/Private/AdminDashboard/AdminDashboard'))
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
                   <Route path={`${PrivateRoutes.PRIVATE}/*`} element={<Private />} />
                 </Route>
                 <Route element={<RoleGuard role={Roles.ADMIN} />} >
-                  <Route path={`${PrivateRoutes.DASHBOARD}/*`} element={<Dashboard />} />
+                  <Route path={`${PrivateRoutes.ADMIN}/*`} element={<AdminDashboard />} />
                 </Route>
               </RoutesWithNotFound>
             </BrowserRouter>

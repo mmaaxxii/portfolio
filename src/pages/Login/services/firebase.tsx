@@ -1,25 +1,37 @@
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {getAuth} from 'firebase/auth'
+import {User, UserCredential, getAuth} from 'firebase/auth'
 import {getStorage, ref, uploadBytes, getDownloadURL, getBytes} from 'firebase/storage'
 import {getFirestore, collection, addDoc, doc, getDocs, getDoc, query, where, setDoc, deleteDoc } from 'firebase/firestore'
 import { getAnalytics } from "firebase/analytics";
-import { User } from "@/models";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
-const firebaseConfig = {
-    apiKey: process.env.REACT_APP_APIKEY,
-    authDomain: process.env.REACT_APP_AUTHDOMAIN,
-    projectId: process.env.REACT_APP_PROJECTID,
-    storageBucket: process.env.REACT_APP_STORAGEBUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
-    appId: process.env.REACT_APP_APPID, 
-    measurementId: process.env.MEASUREMENTID,
+interface firebaseConfigType {
+    apiKey: string | undefined;
+    authDomain: string | undefined;
+    projectId: string | undefined;
+    storageBucket: string | undefined;
+    messagingSenderId: string | undefined;
+    appId: string | undefined ;
+    measurementId: string | undefined ;
+}
+
+
+
+const firebaseConfig: firebaseConfigType = {
+    apiKey: import.meta.env.VITE_BASE_APIKEY,
+    authDomain: import.meta.env.VITE_BASE_AUTHDOMAIN,
+    projectId: import.meta.env.VITE_BASE_PROJECTID,
+    storageBucket: import.meta.env.VITE_BASE_STORAGEBUCKET,
+    messagingSenderId: import.meta.env.VITE_BASE_MESSAGINGSENDERID,
+    appId: import.meta.env.VITE_BASE_APPID, 
+    measurementId: import.meta.env.VITE_BASE_MEASUREMENTID,
     };
 
 // Initialize Firebase
@@ -49,6 +61,7 @@ export async function existsUsername(username: string ) {
     return users.length > 0 ? users[0].uid : null;
   }
   
+  
   export async function registerNewUser(user: User){
       try{
         const collectionRef = collection(db, 'users')
@@ -67,6 +80,7 @@ export async function existsUsername(username: string ) {
      }
   }
   
+
   export async function getUserInfo(uid: string ){
     try {
       const docRef = doc(db, 'users', uid)

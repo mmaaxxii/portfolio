@@ -1,30 +1,34 @@
-import { UserEmptyState , User } from '@/models';
+
 import { clearLocalStorage, persistLocalStorage } from '@/utilities';
+import { User, UserInfo } from 'firebase/auth'
 
 import { createSlice } from '@reduxjs/toolkit';
+import { UserFirebase, UserFirebaseEmptyState } from '@/models';
 
 interface Action {
-    payload: User;
+    payload: UserFirebase;
 }
 
 export const keyUser = 'user';
 
+
+
 export const userSlide = createSlice({
     name: 'user',
-    initialState: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user') as string ) : UserEmptyState,
+    initialState: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user') as string ) : UserFirebaseEmptyState,
     reducers: {
         createUser: (state, action: Action) => {
-            persistLocalStorage<User>(keyUser, action.payload);
+            persistLocalStorage<UserFirebase>(keyUser, action.payload);
             return action.payload;
         },
         modifyUser: ( state, action: Action) => {
             const result = {...state, ...action.payload};
-            persistLocalStorage<User>(keyUser, result);
+            persistLocalStorage<UserFirebase>(keyUser, result);
             return result 
         },  
         resetUser: () => {
             clearLocalStorage(keyUser);
-            return UserEmptyState
+            return UserFirebaseEmptyState
         }
      }
 })

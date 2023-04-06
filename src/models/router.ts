@@ -1,5 +1,5 @@
 export const PublicRoutes = {
-    LOGIN: 'Login',
+    LOGIN: '/Login',
     HOME: 'Home',
     ABOUTME: '/aboutme',
     SKILLS: '/skills',
@@ -9,8 +9,10 @@ export const PublicRoutes = {
 }
 
 export const PrivateRoutes = {
-    PRIVATE: 'Private',
+    PRIVATE: '/Private',
     DASHBOARD: 'Dashboard',
-    HOME: 'Home',
-    SIGNOUT: 'Signout',
+    HOME: '/Home',
+    SIGNOUT: '/Signout',
+    ADMIN: '/Admin',
+
 }

@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { User } from '../models';
+import { User, UserFirebase } from '../models';
 import  userSlice  from './slices/user.slice';
+import { UserInfo } from 'firebase/auth';
 
 export interface AppStore {
-    user: User;
+    user: UserFirebase;
 }
 
 export default configureStore<AppStore>({

@@ -1,4 +1,5 @@
 import { Roles } from '@/models';
+import { UserInfo } from 'firebase/auth';
 
 export interface User {
 
@@ -59,3 +60,21 @@ export const ApiUserEmptyState: ApiUser = {
     created: ""
   };
 
+
+
+  export interface UserFirebase extends UserInfo{
+    
+    role?: Roles
+
+}
+
+
+export const UserFirebaseEmptyState: UserFirebase = {
+    displayName: '',
+    email: '',
+    phoneNumber: '',
+    photoURL: '',
+    providerId: '',
+    uid: '',
+    role: Roles.ADMIN,
+};
