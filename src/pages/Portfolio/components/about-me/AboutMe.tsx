@@ -4,11 +4,9 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "./assets/img/header-img.png"
 import 'animate.css' 
 import TrackVisibility from 'react-on-screen';
-import {AboutMeSection, AboutMeDivJustifyCenter, AboutMeSpan, AboutMeH1, AboutMeP, AboutMeButton, AboutMeImg, AboutMeSpanTxtRotate } from "./styled-components/aboutMe.styled";
+import {AboutMeSection, AboutMeDivJustifyCenter, AboutMeSpan, AboutMeH1, AboutMeP, AboutMeButton, AboutMeImg, AboutMeSpanTxtRotate, AboutMeCharacter, AboutMeCharacterContainer } from "./styled-components/aboutMe.styled";
 import { ColorSchemeActive } from "@/utilities";
-
-
-
+import { AboutMeBG } from "./componets";
 
 export const AboutMe = () => {
     const [loopNum , setLoopNum] = useState(0);
@@ -51,9 +49,11 @@ export const AboutMe = () => {
             setIndex(prevIndex => prevIndex + 1);
         }
     }
+
+
         return(
             <AboutMeSection id="home">
-            
+              <AboutMeBG/>
               <AboutMeDivJustifyCenter>
                 <div>
                   <TrackVisibility>

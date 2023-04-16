@@ -7,6 +7,7 @@ export default function Projects() {
   const imgISO = "src/pages/Portfolio/components/projects/assets/img/iso.png"
   const imgTC = "src/pages/Portfolio/components/projects/assets/img/tuc.png"
   const imgBar = "src/pages/Portfolio/components/projects/assets/img/BAR.png"
+  const imgGlobal = "src/pages/Portfolio/components/projects/assets/img/GoblaNFT.png"
 
   return (
     <ProjectsDiv>
@@ -54,14 +55,14 @@ export default function Projects() {
           </Grid>
           <Grid item xs={10} md= {5.5} lg={3.5}>
               <ProjectCard 
-              logo='ISO' 
+              logo='GG' 
               color='deepPurple[500]'
-              title='ISO 9001 document management' 
-              date='Finished 2017' 
-              short={'The app has the ability to save and manage versions of process documents'}
-              img={imgISO}
+              title='Global Gallery NFT' 
+              date='My own NFT Art Gallery' 
+              short={'This is my own NFT Art Gallery.'}
+              img={imgGlobal}
               alt='ISO 9001'
-              detail='System created for the management of process documents with ISO 9001 certification. Created in ASP.NET. Currently in operation in the Department of Systems of the UTN FRT and in the cadastral system of Tucuman Argentina.' 
+              detail='I have been creating NFTs since 2021. Working with international artist. I have been selling them on OpenSea and Rarible. I have been creating NFTs since 2021. I have been selling them on OpenSea and Rarible.' 
               web={true}
               mobile={false} />
           </Grid> 

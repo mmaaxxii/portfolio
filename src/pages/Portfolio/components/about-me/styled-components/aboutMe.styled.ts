@@ -1,20 +1,64 @@
 import styled from "styled-components";
 
-export const AboutMeSection = styled.section ` 
+export const AboutMeSection = styled.div ` 
         height: 100%;
         margin-top: 50px;
         padding: 0px 0 ;
-        background-position-y: 0;
-        background-image: var(--bgImg);
-        background-position: absolute;
-        background-size: cover;     
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     `;
+
+export const AboutMeCharacterContainer = styled.div `
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    top:0;
+`;
+
+export const AboutMeCharacter = styled.div `
+    position:relative;
+    top:0;
+    display: flex;
+    & p {
+        margin-left: 2px;
+        margin-right: 2px;
+        position: relative;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        background: transparent;
+        color: #f30889;
+        //margin: 0 4px;
+        //border-radius: 50%;
+        text-shadow: #f578bc 1px 0 10px;
+        animation: animate 30s linear infinite;
+        animation-duration: calc(125s / var(--i));
+        margin-top: calc(125s / var(--i));
+        
+    }
+
+    & p:nth-child(even) {
+        font-family: 'Times New Roman', Times, serif;
+        background: transparent;
+        color: #f30889;
+        //border-radius: 50%;
+        text-shadow: #f578bc 1px 0 10px;
+    }
+
+    @keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(1);
+    }
+
+    100% {
+        transform: translateY(0vh) scale(1);
+    }
+
+        }
+
+`;
 
 export const AboutMeSpan = styled.span ` 
     font-weight: 700;

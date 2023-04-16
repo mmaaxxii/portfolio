@@ -73,6 +73,7 @@ interface Props {
               <a onClick={() => (handleClickLink(PublicRoutes.SKILLS))} className={activeRoute === PublicRoutes.SKILLS ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>Experience</a>
               <a onClick={() => (handleClickLink(PublicRoutes.PROJECTS))}  className={activeRoute === PublicRoutes.PROJECTS ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>Projects</a>
               <a onClick={() => (handleClickLink(PublicRoutes.CONTACT))}  className={activeRoute === PublicRoutes.CONTACT ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>Contact</a>
+              <a onClick={() => navigate(PublicRoutes.LOGIN)}  className={activeRoute === PublicRoutes.LOGIN ? 'selectedLink' : (!clicked ? (colorScheme==='dark' ?'unselecetedLinkWebDark' :'unselecetedLinkWebLight') : 'unselecetedLinkMob')}>Login</a>
             </div>
             <button id="switch" className="switch" onClick={handleClickTheme}>{colorScheme === 'dark' ?  <SunFill size={25}/>:<MoonFill size={25}/> }</button>
             <div className="burguer">

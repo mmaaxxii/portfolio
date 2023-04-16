@@ -10,6 +10,8 @@ export default function Skills() {
     <SkillsHeader> 
       <div className='animate__animated animate__backInDown' >
         <h1> my<span>Ex</span>perience </h1>
+        <br></br>
+        <p>The experience led me to acquire what I believe is my best virtue. The ability to learn in a self-directed way in a fast way, reaching solid results. That has led me to today having experience in: iOS, Android, web, Win, Genexus, design (Adobe Products), architecture (Autocad, Sketchup), among many other programs that I have had to learn during the last 10 years to carry out projects that I was in charge of. </p>
       </div>
     </SkillsHeader>
 

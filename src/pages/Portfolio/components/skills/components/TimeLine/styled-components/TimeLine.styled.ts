@@ -7,13 +7,14 @@ export const TimeLineContainer = styled.div`
      margin-top: 30px;
      
      h1 { 
-        padding: 10px;
-        font-size: 1.3rem;
+        padding: 8px;
+        font-size: 1.1rem;
         text-align: center;
      }
 
      p { 
         text-align: center;
+        font-size: 0.8 rem;
      }
 
     

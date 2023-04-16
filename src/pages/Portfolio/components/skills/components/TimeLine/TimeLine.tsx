@@ -12,6 +12,9 @@ import DevicesIcon from '@mui/icons-material/Devices';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import Typography from '@mui/material/Typography';
 import { TimeLineContainer, TimeLineHeader } from './styled-components';
+import AdbIcon from '@mui/icons-material/Adb';
+import AppleIcon from '@mui/icons-material/Apple';
+
 
 export default function CustomizedTimeline() {
     return (
@@ -20,13 +23,15 @@ export default function CustomizedTimeline() {
                 <h4><span>.</span>TIMELINE</h4>
             </TimeLineHeader>
             <Timeline position="alternate">
+
+                    
                 <TimelineItem>
                     <TimelineOppositeContent
                         sx={{ m: 'auto 0' }}
                         align="right"
                         variant="body2"
                     >
-                        2014
+                        2013
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector />
@@ -40,13 +45,41 @@ export default function CustomizedTimeline() {
                         <p  >Working for local business</p>
                     </TimelineContent>
                 </TimelineItem>
+
+
+                    
+                    <TimelineItem>
+                        <TimelineOppositeContent
+                            sx={{ m: 'auto 0' }}
+                            
+                            variant="body2"
+                        >
+                            2015
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                            <TimelineConnector />
+                            <TimelineDot color="primary" variant="outlined">
+                                <AdbIcon />
+                            </TimelineDot>
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent sx={{ py: '12px', px: 2 }}>
+                            <h1 >First Android App </h1>
+                            <p  >Comicios, app created for count votes in a local election</p>
+                        </TimelineContent>
+                    </TimelineItem>
+
+
+
+
                 <TimelineItem>
                     <TimelineOppositeContent
                         sx={{ m: 'auto 0' }}
+                        align="right"
                         variant="body2"
                        
                     >
-                        2016
+                        2018
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector />
@@ -57,11 +90,42 @@ export default function CustomizedTimeline() {
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
                         <h1 >
-                            Sys engineer
+                        Sys Engineer
                         </h1>
-                        <p >Graduate from UTN-FRT 🇦🇷</p>
+                        <p>Graduated in UTN - FRT </p>
                     </TimelineContent>
                 </TimelineItem>
+
+
+
+
+                <TimelineItem>
+                    <TimelineOppositeContent
+                        sx={{ m: 'auto 0' }}
+                        
+                        variant="body2"
+                        
+                    >
+                        2019
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                        <TimelineConnector />
+                        <TimelineDot color="primary" variant="outlined">
+                            <AppleIcon />
+                        </TimelineDot>
+                        <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                    </TimelineSeparator>
+                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <h1 >
+                            First iOS App
+                        </h1>
+                        <p >Published and working between 2018 and 2021 </p>
+                    </TimelineContent>
+                
+                </TimelineItem>
+
+
+
                 <TimelineItem>
                     <TimelineOppositeContent
                         sx={{ m: 'auto 0' }}
@@ -73,7 +137,7 @@ export default function CustomizedTimeline() {
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector />
-                        <TimelineDot color="primary" variant="outlined">
+                        <TimelineDot color="primary" >
                             <DevicesIcon />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
@@ -85,10 +149,13 @@ export default function CustomizedTimeline() {
                         <p >Certified by Genexus </p>
                     </TimelineContent>
                 </TimelineItem>
+                
+
+
                 <TimelineItem>
                     <TimelineOppositeContent
                         sx={{ m: 'auto 0' }}
-                        align="right"
+                        
                         variant="body2"
                     >
                         2022
@@ -107,6 +174,8 @@ export default function CustomizedTimeline() {
                         <p >Learning by my own!</p>
                     </TimelineContent>
                 </TimelineItem>
+
+
             </Timeline>
         </TimeLineContainer>
 

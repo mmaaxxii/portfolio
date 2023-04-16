@@ -14,6 +14,12 @@ export const SkillsSection = styled.section`
     
 `
 export const SkillsHeader = styled.div`
+     margin-top: 50px;
+     p {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+     }
     h4 { 
         
         padding: 10px;
@@ -23,7 +29,7 @@ export const SkillsHeader = styled.div`
         color: var(--main-color);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
             
         h1 { 
          margin-top: 100px;

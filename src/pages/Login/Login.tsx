@@ -1,6 +1,6 @@
 import { PrivateRoutes, UserFirebase } from "@/models"
 import { createUser } from "@/redux/slices/user.slice"
-import { GoogleAuthProvider, User, onAuthStateChanged, signInWithPopup } from "firebase/auth"
+import { GoogleAuthProvider, User, UserCredential, onAuthStateChanged, signInWithPopup } from "firebase/auth"
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
@@ -30,7 +30,7 @@ function Login() {
 
         async function signInWithGoogle(googleProvider: GoogleAuthProvider) {
             try {
-                const result = await signInWithPopup(auth, googleProvider)
+                const result: UserCredential = await signInWithPopup(auth, googleProvider)
                 const user: UserFirebase =  FirebaseAdapter(result)
                 dispatch(createUser(user))
                 navigate(`${PrivateRoutes.PRIVATE}`, { replace: true })
