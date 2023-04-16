@@ -19,9 +19,9 @@ import 'animate.css';
       input.parentElement?.classList.add("not-empty");          
       }); 
     input.addEventListener('blur', () => {
-      if (input.value === '') { 
-        input.parentElement?.classList.remove("not-empty");  
-      }
+      //if (input.value === '') { 
+        //input.parentElement?.classList.remove("not-empty");  
+      //}
 
       input.parentElement?.classList.remove("focus");
       
