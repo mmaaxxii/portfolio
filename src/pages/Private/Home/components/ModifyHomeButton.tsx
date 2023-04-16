@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux"
 export default function ModifyHomeButton() {
     const dispatch = useDispatch()
     const dispatchAction = () => {
-      dispatch(modifyUser({ name: "Gentleman", id: '2' }))
+      //dispatch(modifyUser({ name: "Gentleman", id: '2' }))
     }
   return (
     <button onClick={dispatchAction}>Dispath Modify Action</button>

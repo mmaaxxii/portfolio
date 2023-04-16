@@ -14,7 +14,7 @@ export default  function CreateHomeButton() {
   }
     const dispatchAction = () => {
       getService()
-      .then(response => dispatch(createUser( response )))
+      //.then(response => dispatch(createUser( response )))
     }
   return (
     <button onClick={dispatchAction}>Dispatch Create Action</button>
