@@ -8,15 +8,15 @@ import { AuthGuard, RoleGuard } from './guards'
 import { RoutesWithNotFound, SnackbarUtilitiesConfigurator } from './utilities'
 import { lazy, Suspense } from 'react'
 import { Portfolio } from './pages'
+import { Spinner } from '@/components'
 const Login = lazy(() => import('./pages/Login/Login'))
 const Private = lazy(() => import('./pages/Private/Private'))
-const Dashboard =lazy(() => import( './pages/Private/Dashboard/Dashboard'))
 const AdminDashboard = lazy(() => import('./pages/Private/AdminDashboard/AdminDashboard'))
 
 function App() {
   return (
     <div className='App'>
-      <Suspense fallback={<>Loading</>}>
+      <Suspense fallback={<Spinner/>} >
         <Provider store={store}>
           <SnackbarProvider> 
             <SnackbarUtilitiesConfigurator />
