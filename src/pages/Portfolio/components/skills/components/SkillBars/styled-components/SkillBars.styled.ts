@@ -7,7 +7,6 @@ export const SkillBarsGeneralDiv = styled.div `
     margin: 0px auto;
     color: var(--color);
     padding: 20px;
-    
     @media (max-width:768px) {
 	
 		width: 90%;

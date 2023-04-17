@@ -18,7 +18,7 @@ import AppleIcon from '@mui/icons-material/Apple';
 
 export default function CustomizedTimeline() {
     return (
-        <TimeLineContainer>
+        <TimeLineContainer >
             <TimeLineHeader>
                 <h4><span>.</span>TIMELINE</h4>
             </TimeLineHeader>
@@ -28,7 +28,7 @@ export default function CustomizedTimeline() {
                 <TimelineItem>
                     <TimelineOppositeContent
                         sx={{ m: 'auto 0' }}
-                        align="right"
+                        
                         variant="body2"
                     >
                         2013
@@ -40,7 +40,7 @@ export default function CustomizedTimeline() {
                         </TimelineDot>
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                    <TimelineContent >
                         <h1 >Junior Genexus Developer</h1>
                         <p  >Working for local business</p>
                     </TimelineContent>
@@ -63,7 +63,7 @@ export default function CustomizedTimeline() {
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <TimelineContent >
                             <h1 >First Android App </h1>
                             <p  >Comicios, app created for count votes in a local election</p>
                         </TimelineContent>

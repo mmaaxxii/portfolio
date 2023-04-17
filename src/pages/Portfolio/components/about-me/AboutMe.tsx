@@ -4,9 +4,9 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "./assets/img/header-img.png"
 import 'animate.css' 
 import TrackVisibility from 'react-on-screen';
-import {AboutMeSection, AboutMeDivJustifyCenter, AboutMeSpan, AboutMeH1, AboutMeP, AboutMeButton, AboutMeImg, AboutMeSpanTxtRotate, AboutMeCharacter, AboutMeCharacterContainer } from "./styled-components/aboutMe.styled";
+import {AboutMeSection, AboutMeDivJustifyCenter, AboutMeSpan, AboutMeH1, AboutMeP, AboutMeButton, AboutMeImg, AboutMeSpanTxtRotate, AboutMeCharacter, AboutMeCharacterContainer, AboutMeButtonsDiv } from "./styled-components/aboutMe.styled";
 import { ColorSchemeActive } from "@/utilities";
-import { AboutMeBG } from "./componets";
+import { AboutMeBG, AboutMeSocialButtons } from "./componets";
 
 export const AboutMe = () => {
     const [loopNum , setLoopNum] = useState(0);
@@ -63,7 +63,10 @@ export const AboutMe = () => {
                       <AboutMeH1>{`Hi! I'm Max, `} </AboutMeH1>
                       <AboutMeH1> <span data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "Sys Engineer" ]'><AboutMeSpanTxtRotate>{text}</AboutMeSpanTxtRotate></span></AboutMeH1>
                         <AboutMeP>System engineer, senior Genexus developer, more than 10 years producing code. </AboutMeP>
-                        <AboutMeButton onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={50}/>  </AboutMeButton>
+                        <AboutMeButtonsDiv >
+                          <AboutMeButton onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={50}/>  </AboutMeButton>
+                          <AboutMeSocialButtons/>
+                        </AboutMeButtonsDiv>
                     </div>}
                   </TrackVisibility>
                 </div>

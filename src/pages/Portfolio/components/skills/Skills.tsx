@@ -16,7 +16,7 @@ export default function Skills() {
     </SkillsHeader>
 
     <SkillsSection >
-    <Grid container direction="row" justifyContent="space-around" alignItems="center" spacing={2} >
+    <Grid container direction="row" justifyContent="space-around" alignItems="flex-start" spacing={2} >
           <Grid item xs={10} md= {5.5} lg={5.5}>
             <SkillBars /> 
           </Grid>
