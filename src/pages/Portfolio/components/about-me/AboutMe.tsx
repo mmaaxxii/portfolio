@@ -53,7 +53,6 @@ export const AboutMe = () => {
 
         return(
             <AboutMeSection id="home">
-              <AboutMeBG/>
               <AboutMeDivJustifyCenter>
                 <div>
                   <TrackVisibility>
@@ -79,6 +78,7 @@ export const AboutMe = () => {
                   </TrackVisibility>
                 </div>
               </AboutMeDivJustifyCenter>
+              <AboutMeBG/>
           </AboutMeSection>
           
         )

@@ -22,7 +22,7 @@ export default function CustomizedTimeline() {
             <TimeLineHeader>
                 <h4><span>.</span>TIMELINE</h4>
             </TimeLineHeader>
-            <Timeline position="alternate">
+            <Timeline position="alternate" sx={{px:0}}>
 
                     
                 <TimelineItem>

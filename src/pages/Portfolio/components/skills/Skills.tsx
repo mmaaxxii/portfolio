@@ -16,17 +16,17 @@ export default function Skills() {
     </SkillsHeader>
 
     <SkillsSection >
-    <Grid container direction="row" justifyContent="space-around" alignItems="flex-start" spacing={2} >
-          <Grid item xs={10} md= {5.5} lg={5.5}>
-            <SkillBars /> 
-          </Grid>
-          <Grid item xs={10} md= {5.5} lg={5.5}>
+      <Grid container direction="row" justifyContent="space-around" alignItems="flex-start"  >
+            <Grid item xs={10} md= {5.5} lg={5.5}>
+              <SkillBars /> 
+            </Grid>
+            <Grid item xs={10} md= {5.5} lg={5.5}>
 
-            <div className='animate__animated animate__backInUp' >
-              <TimeLine/>
-            </div>
-          </Grid>
-    </Grid>
+              <div className='animate__animated animate__backInUp' >
+                <TimeLine/>
+              </div>
+            </Grid>
+      </Grid>
     </SkillsSection>
 
     </>
