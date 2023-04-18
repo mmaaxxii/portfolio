@@ -28,6 +28,8 @@ interface Props {
 
   const handleClick = () => {
     setClicked(!clicked)
+    const body = document.querySelector('body')?.setAttribute('style', `overflow-y: ${clicked ? 'auto' : 'hidden'}`)
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }
 
   const handleClickLink = (route: string) => {
