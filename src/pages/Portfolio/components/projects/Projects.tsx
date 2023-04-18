@@ -4,10 +4,10 @@ import { ProjectsDiv } from './styled-components';
 
 
 export default function Projects() {
-  const imgISO = "/src/pages/Portfolio/components/projects/assets/img/iso.png"
-  const imgTC = "/src/pages/Portfolio/components/projects/assets/img/tuc.png"
-  const imgBar = "/src/pages/Portfolio/components/projects/assets/img/BAR.png"
-  const imgGlobal = "/src/pages/Portfolio/components/projects/assets/img/GoblaNFT.png"
+  const imgISO = "./src/pages/Portfolio/components/projects/assets/img/iso.png"
+  const imgTC = "./src/pages/Portfolio/components/projects/assets/img/tuc.png"
+  const imgBar = "./src/pages/Portfolio/components/projects/assets/img/BAR.png"
+  const imgGlobal = "./src/pages/Portfolio/components/projects/assets/img/GoblaNFT.png"
 
   return (
     <ProjectsDiv>
