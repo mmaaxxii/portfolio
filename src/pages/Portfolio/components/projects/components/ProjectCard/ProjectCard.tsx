@@ -73,7 +73,7 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 				}
 				title={<h2>{title}</h2>}
 				subheader={<small>{date}</small>}
-				sx = { { bgcolor: 'var(--bg)'}}
+				sx = { { bgcolor: 'var(--bg)' , borderStyle: 'solid solid hidden solid', borderColor: '#f30889', borderWidth: '1px', borderRadius: '5px 5px 0px 0px'  }}
 			/>
 			
 			<CardMedia
@@ -81,13 +81,18 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 				height="194"
 				image={img}
 				alt={alt}
+				sx = { {  borderStyle: 'hidden solid', borderColor: '#f30889', borderWidth: '1px' }}
+				
 			/>
-			<CardContent>
+			<CardContent
+			sx = { {  borderStyle: 'hidden solid', borderColor: '#f30889', borderWidth: '1px' }}
+			 >
 				<h5>
 					{short}
 				</h5>
 			</CardContent>
-			<CardActions disableSpacing>
+			<CardActions disableSpacing
+			sx = { { borderStyle: 'hidden solid solid solid', borderColor: '#f30889', borderWidth: '1px' , borderRadius: '0px 0px 5px 5px' }}>
 				{
 					web
 						?

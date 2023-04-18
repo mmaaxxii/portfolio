@@ -141,3 +141,10 @@ export const AboutMeDivJustifyCenter = styled.div `
     align-items: center;
     padding: 20% 0;
  `;
+
+ export const AboutMeButtonsDiv = styled.div `
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+`;
