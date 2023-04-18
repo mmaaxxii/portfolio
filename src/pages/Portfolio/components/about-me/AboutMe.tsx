@@ -64,7 +64,7 @@ export const AboutMe = () => {
                       <AboutMeH1> <span data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "Sys Engineer" ]'><AboutMeSpanTxtRotate>{text}</AboutMeSpanTxtRotate></span></AboutMeH1>
                         <AboutMeP>System engineer, senior Genexus developer, more than 10 years producing code. </AboutMeP>
                         <AboutMeButtonsDiv >
-                          <AboutMeButton onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={50}/>  </AboutMeButton>
+                          <AboutMeButton onClick={() => console.log('connect')}>Let's Connect  <ArrowRightCircle size={50}/>  </AboutMeButton>
                           <AboutMeSocialButtons/>
                         </AboutMeButtonsDiv>
                     </div>}
