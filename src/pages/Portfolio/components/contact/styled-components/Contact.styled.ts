@@ -103,7 +103,7 @@ export const ContactSection = styled.section`
         color: var(--color);
         font-weight: 600;
         font-size: 0.95rem;
-        border: 2px solid transparent;
+        border: 1px solid var(--main-color);
         box-shadow: 0 0 0 1px var(--main-color);
         transition: 0.3s;
         &:hover {
@@ -162,7 +162,7 @@ export const ContactSection = styled.section`
         background-color: var(--bg);    
         color: var(--main-color);
         border-radius: 15px;
-        border: solid 1px var(--main-color);
+        border: solid 2px var(--main-color);
         font-family: inherit;
         font-weight: 500;
         font-size: 1rem;
@@ -237,6 +237,12 @@ export const ContactSection = styled.section`
         opacity: 0.8;
     }
 
+    // code first mobile xs
+    //.. 
+    // min 900 md 
+    //.. 
+    // min 1200 lg 
+    //
     @media (max-width: 1000px) {
         .logo {
             margin-right: 1rem;

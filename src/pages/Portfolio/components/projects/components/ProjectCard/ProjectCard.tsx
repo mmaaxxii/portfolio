@@ -80,6 +80,7 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 				component="img"
 				height="194"
 				image={img}
+				src=''
 				alt={alt}
 				sx = { {  borderStyle: 'hidden solid', borderColor: '#f30889', borderWidth: '1px' }}
 				
