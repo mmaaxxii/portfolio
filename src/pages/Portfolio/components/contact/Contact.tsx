@@ -11,6 +11,10 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
 
  function Contact() {
 
+   const [name, setName] = useState<string>('');
+   const [company, setCompany] = useState<string>('');
+   const [email, setEmail] = useState<string>('');
+   const [message, setMessage] = useState<string>('');
   
 
   useEffect( () => {
@@ -38,20 +42,16 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
   async function registerNewContactFunc(contactRequest : ContactType) {
     await registerNewContact(contactRequest);
   }
+  
 
   const handleSubmit = (e : React.FormEvent) => {
 
     e.preventDefault();
 
-    const [name, setName] = useState<string>('');
-    const [company, setCompany] = useState<string>('');
-    const [email, setEmail] = useState<string>('');
-    const [message, setMessage] = useState<string>('');
-
     const data = new FormData(e.target as HTMLFormElement);
     setName(data.get('Name')?.toString()!);
     setCompany(data.get('Company')?.toString()!);
-    setEmail(data.get('Email')?.toString()!);
+    setEmail(data.get('Email')?.toString()!); 
     setMessage(data.get('Message')?.toString()!);
     
     const contactRequest : ContactType = {
@@ -64,10 +64,6 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
     console.log(contactRequest);
     registerNewContactFunc(contactRequest);
     
-  }
-
-  function handleSubmit1(e : any) {
-    e.preventDefault();
   }
 
   return (
