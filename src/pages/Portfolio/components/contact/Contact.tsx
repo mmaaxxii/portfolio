@@ -48,6 +48,8 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
 
     e.preventDefault();
 
+    console.log(e.target);
+
     const data = new FormData(e.target as HTMLFormElement);
     setName(data.get('Name')?.toString()!);
     setCompany(data.get('Company')?.toString()!);
@@ -55,7 +57,7 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
     setMessage(data.get('Message')?.toString()!);
     
     const contactRequest : ContactType = {
-      uid: '111',
+      uid: '21',
       name: name,
       company: company,
       email: email,
@@ -76,7 +78,7 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
                 <p className='text'>Or reach us via : <a href='mailto:maximilianoespeche@gmail.com'>maximilianoespeche@gmail.com</a></p>
               </div>
               <div className='animate__animated animate__fadeIn'>
-                <form action='index.html' method='post' className='contact-form'> 
+                <form action='index.html' method='post' className='contact-form'  onSubmit={handleSubmit}> 
                   <div className='input-wrap w-100'> 
                     <input className='contact-input' type='text' autoComplete='off' name='Name'  required >  
                     </input>
@@ -105,7 +107,7 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
                   </div>
 
                   <div className='contact-buttons'>
-                    <input type='submit' value='Send message' className='btn' onClick={handleSubmit}></input>
+                    <input type='submit' value='Send message' className='btn'></input>
                   </div>
 
                 </form>

@@ -39,8 +39,8 @@ const firebaseConfig: firebaseConfigType = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 export const auth = getAuth(app);
-export const db = getFirestore(app);
-export const storage = getStorage(app);
+export const db = getFirestore();
+export const storage = getStorage();
 
 export async function userExists (uid: string){
     const docRef = doc(db, 'users', uid)
