@@ -1,10 +1,12 @@
 
 import { ContactSection } from './styled-components/Contact.styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAddressCard, faEnvelope, faInbox } from '@fortawesome/free-solid-svg-icons';
-import { useEffect } from 'react';
+import { faAddressCard, faEnvelope, faInbox, faBuilding } from '@fortawesome/free-solid-svg-icons';
+import { useEffect, useState } from 'react';
 import contactImg from './assets/img.jpg'
+import { ContactType } from '@/models';
 import 'animate.css';
+import { registerNewContact } from '@/pages/Login/services/firebase';
 
 
  function Contact() {
@@ -31,7 +33,42 @@ import 'animate.css';
     });
   }, [])
   
-  
+  //function handlesubmit must save the data in a firebase database and send a mail to the owner of the website and the user
+
+  async function registerNewContactFunc(contactRequest : ContactType) {
+    await registerNewContact(contactRequest);
+  }
+
+  const handleSubmit = (e : React.FormEvent) => {
+
+    e.preventDefault();
+
+    const [name, setName] = useState<string>('');
+    const [company, setCompany] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [message, setMessage] = useState<string>('');
+
+    const data = new FormData(e.target as HTMLFormElement);
+    setName(data.get('Name')?.toString()!);
+    setCompany(data.get('Company')?.toString()!);
+    setEmail(data.get('Email')?.toString()!);
+    setMessage(data.get('Message')?.toString()!);
+    
+    const contactRequest : ContactType = {
+      uid: '111',
+      name: name,
+      company: company,
+      email: email,
+      message: message,
+    };
+    console.log(contactRequest);
+    registerNewContactFunc(contactRequest);
+    
+  }
+
+  function handleSubmit1(e : any) {
+    e.preventDefault();
+  }
 
   return (
       <ContactSection>
@@ -45,17 +82,17 @@ import 'animate.css';
               <div className='animate__animated animate__fadeIn'>
                 <form action='index.html' method='post' className='contact-form'> 
                   <div className='input-wrap w-100'> 
-                    <input className='contact-input' type='text' autoComplete='off' name='FirstName'  required >  
+                    <input className='contact-input' type='text' autoComplete='off' name='Name'  required >  
                     </input>
-                    <label>First Name</label>
+                    <label>Name</label>
                     <FontAwesomeIcon icon={faAddressCard} />
                   </div>
 
                   <div className='input-wrap w-100'> 
-                    <input className='contact-input' type='text' autoComplete='off' name='LastName'  required > 
+                    <input className='contact-input' type='text' autoComplete='off' name='Company'  > 
                     </input>
-                    <label>Last Name</label>
-                    <FontAwesomeIcon icon={faAddressCard} />
+                    <label>Company</label>
+                    <FontAwesomeIcon icon={faBuilding} />
                   </div>
 
                   <div className='input-wrap w-100'> 
@@ -72,7 +109,7 @@ import 'animate.css';
                   </div>
 
                   <div className='contact-buttons'>
-                    <input type='submit' value='Send message' className='btn'></input>
+                    <input type='submit' value='Send message' className='btn' onClick={handleSubmit}></input>
                   </div>
 
                 </form>

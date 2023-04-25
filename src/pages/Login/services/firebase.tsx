@@ -5,6 +5,7 @@ import {User, UserCredential, getAuth} from 'firebase/auth'
 import {getStorage, ref, uploadBytes, getDownloadURL, getBytes} from 'firebase/storage'
 import {getFirestore, collection, addDoc, doc, getDocs, getDoc, query, where, setDoc, deleteDoc } from 'firebase/firestore'
 import { getAnalytics } from "firebase/analytics";
+import { ContactType } from "@/models";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -38,8 +39,8 @@ const firebaseConfig: firebaseConfigType = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 export const auth = getAuth(app);
-export const db = getFirestore();
-export const storage = getStorage();
+export const db = getFirestore(app);
+export const storage = getStorage(app);
 
 export async function userExists (uid: string){
     const docRef = doc(db, 'users', uid)
@@ -62,11 +63,11 @@ export async function existsUsername(username: string ) {
   }
   
   
-  export async function registerNewUser(user: User){
+  export async function registerNewContact(contactRequest: ContactType){
       try{
-        const collectionRef = collection(db, 'users')
-        const docRef = doc(collectionRef, user.uid)
-        await setDoc(docRef, user)
+        const collectionRef = collection(db, 'contacts')
+        const docRef = doc(collectionRef, contactRequest.uid)
+        await setDoc(docRef, contactRequest)
       } catch (error){}
   }
   
