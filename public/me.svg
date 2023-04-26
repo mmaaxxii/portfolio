@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30px" height="30px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 10 10"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="671" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Centra No2">
+		<font-face-src>
+			<font-face-name name="Centra No2"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="&gt;" horiz-adv-x="600" d="M512.003 294.001l-422.999 -204.997 0 84.9957 330.994 158.001 -330.994 158.001 0 86.9996 422.999 -204.997 0 -78.0027z"/>
+   <glyph unicode="/" horiz-adv-x="449" d="M75.9989 -99.9959l-86.0017 0 368.004 864.998 86.0017 0 -368.004 -864.998z"/>
+   <glyph unicode=" " horiz-adv-x="245" d=""/>
+   <glyph unicode="&lt;" horiz-adv-x="600" d="M87.9974 372.003l422.999 204.997 0 -85.0039 -329.996 -157.993 329.996 -158.001 0 -86.9996 -422.999 204.997 0 78.0027z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Centra No2";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str0 {stroke:#373435;stroke-width:0.0802938}
+    .fil0 {fill:black}
+    .fil1 {fill:#F30889}
+    .fnt0 {font-weight:normal;font-size:4.90856px;font-family:'Centra No2'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0 str0" cx="5" cy="5" r="5"/>
+  <text x="0" y="6"  class="fil1 fnt0">&lt; /&gt;</text>
+ </g>
+</svg>
