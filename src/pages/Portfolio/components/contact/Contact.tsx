@@ -11,12 +11,6 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
 
  function Contact() {
 
-   const [name, setName] = useState<string>('');
-   const [company, setCompany] = useState<string>('');
-   const [email, setEmail] = useState<string>('');
-   const [message, setMessage] = useState<string>('');
-  
-
   useEffect( () => {
     const inputs = document.querySelectorAll('.contact-input');
   inputs.forEach( (input) => {
@@ -48,23 +42,17 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
 
     e.preventDefault();
 
-    console.log(e.target);
-
     const data = new FormData(e.target as HTMLFormElement);
-    setName(data.get('Name')?.toString()!);
-    setCompany(data.get('Company')?.toString()!);
-    setEmail(data.get('Email')?.toString()!); 
-    setMessage(data.get('Message')?.toString()!);
-    
+
     const contactRequest : ContactType = {
-      uid: '21',
-      name: name,
-      company: company,
-      email: email,
-      message: message,
+      name: data.get('Name')?.toString()!,
+      company: data.get('Company')?.toString()!,
+      email: data.get('Email')?.toString()!,
+      message: data.get('Message')?.toString()!,
     };
-    console.log(contactRequest);
+
     registerNewContactFunc(contactRequest);
+
     
   }
 

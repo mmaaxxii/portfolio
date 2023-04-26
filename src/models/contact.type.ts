@@ -1,8 +1,8 @@
 
 export interface ContactType {
-    uid: string
+    uid?: string
     name: string
-    company: string
+    company?: string
     email: string
     message: string 
 };

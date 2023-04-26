@@ -65,9 +65,12 @@ export async function existsUsername(username: string ) {
   
   export async function registerNewContact(contactRequest: ContactType){
       try{
-        const collectionRef = collection(db, 'contacts')
-        const docRef = doc(collectionRef, contactRequest.uid)
-        await setDoc(docRef, contactRequest)
+        //const collectionRef = collection(db, 'contacts')
+        //const docRef = doc(collectionRef, contactRequest.uid)
+        //await setDoc(docRef, contactRequest)
+        
+        const docRef = await addDoc(collection(db, "contacts"), contactRequest);
+
       } catch (error){}
   }
   
