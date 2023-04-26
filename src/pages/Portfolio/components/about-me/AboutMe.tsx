@@ -60,7 +60,7 @@ export const AboutMe = () => {
                     {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__jello" : ""}>
                       <AboutMeSpan>Welcome to my Portfolio</AboutMeSpan>
-                      <AboutMeH1>{`Hi! I'm Max, `} </AboutMeH1>
+                      <AboutMeH1>{`Hi! I'm Max , `} </AboutMeH1>
                       <AboutMeH1> <span data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "Sys Engineer" ]'><AboutMeSpanTxtRotate>{text}</AboutMeSpanTxtRotate></span></AboutMeH1>
                         <AboutMeP>System engineer, senior Genexus developer, more than 10 years producing code. </AboutMeP>
                         <AboutMeButtonsDiv >
