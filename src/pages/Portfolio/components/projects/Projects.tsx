@@ -6,7 +6,7 @@ import { ProjectsDiv } from './styled-components';
 export default function Projects() {
   const imgISO = "/assets/img/iso.jpeg"
   const imgTC = "/assets/img/tuc.jpeg"
-  const imgBar = "/assets/img/BAR.jpeg"
+  const imgBar = "/assets/img/bar.jpeg"
   const imgGlobal = "/assets/img/GoblaNFT.png"
 
   return (
