@@ -7,8 +7,8 @@ import { PrivateRoutes, PublicRoutes, Roles } from './models'
 import { AuthGuard, RoleGuard } from './guards'
 import { RoutesWithNotFound, SnackbarUtilitiesConfigurator } from './utilities'
 import { lazy, Suspense } from 'react'
-import { Portfolio } from './pages'
 import { Spinner } from '@/components'
+const Portfolio = lazy(() => import('./pages/Portfolio/Portfolio'))
 const Login = lazy(() => import('./pages/Login/Login'))
 const Private = lazy(() => import('./pages/Private/Private'))
 const AdminDashboard = lazy(() => import('./pages/Private/AdminDashboard/AdminDashboard'))

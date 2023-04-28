@@ -11,7 +11,7 @@ export default function Projects() {
 
   return (
     <ProjectsDiv>
-        <Grid container direction="row" justifyContent="space-around" alignItems="center" spacing={2} >
+        <Grid container direction="row" justifyContent="space-around" alignItems="top" spacing={2} >
           <Grid item xs={10} md= {5.5} lg={3.5}>
               <ProjectCard 
               logo='ISO' 

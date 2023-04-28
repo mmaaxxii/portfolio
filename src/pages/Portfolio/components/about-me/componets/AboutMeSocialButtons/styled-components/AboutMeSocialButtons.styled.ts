@@ -48,7 +48,7 @@ export const AboutMeSocialButtonsDiv = styled.div`
     } 
     & li:nth-child(1) a:hover {
         color: var(--bg);
-        background-color: #0A66C2;
+        background-color: #0d559e;
     }
     & li:nth-child(2) a:hover {
         color: var(--bg);
@@ -60,7 +60,7 @@ export const AboutMeSocialButtonsDiv = styled.div`
     }
     & li:nth-child(4) a:hover {
         color: var(--bg);
-        background-color: #E4405F;
+        background-color: #6cc644;
     }
 
 }

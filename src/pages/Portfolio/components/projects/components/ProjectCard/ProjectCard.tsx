@@ -62,18 +62,15 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 		<Card >
 			<CardHeader
 				avatar={
-					<Avatar sx={{ bgcolor: '#f30889'}} aria-label="recipe">
+					<Avatar sx={{ bgcolor: '#f30889', fontFamily: "Centra"}} aria-label="recipe" >
 						{logo}
 					</Avatar>
 				}
-				action={
-					<IconButton aria-label="settings">
-						<MoreVertIcon />
-					</IconButton>
-				}
+
+				
 				title={<h2>{title}</h2>}
 				subheader={<small>{date}</small>}
-				sx = { { bgcolor: 'var(--bg)' , borderStyle: 'solid solid hidden solid', borderColor: '#f30889', borderWidth: '1px', borderRadius: '5px 5px 0px 0px'  }}
+				sx = { { fontFamily: "Centra", bgcolor: 'var(--bg)' , borderStyle: 'solid solid hidden solid', borderColor: '#f30889', borderWidth: '1px', borderRadius: '5px 5px 0px 0px'  }}
 			/>
 			
 			<CardMedia
@@ -86,7 +83,7 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 				
 			/>
 			<CardContent
-			sx = { {  borderStyle: 'hidden solid', borderColor: '#f30889', borderWidth: '1px' }}
+			sx = { {  borderStyle: 'hidden solid', borderColor: '#f30889', borderWidth: '1px', }}
 			 >
 				<h5>
 					{short}
@@ -97,7 +94,8 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 				{
 					web
 						?
-						<IconButton aria-label="add to favorites">
+						<IconButton aria-label="add to favorites"
+						disabled >
 							<ComputerIcon />
 						</IconButton>
 						:
@@ -106,7 +104,7 @@ function ProjectCard({ logo, color, title, date, short, img, alt, detail, web, m
 				{
 					mobile
 						?
-						<IconButton aria-label="add to favorites">
+						<IconButton aria-label="add to favorites" disabled>
 							<MobileFriendlyIcon />
 						</IconButton>
 						:

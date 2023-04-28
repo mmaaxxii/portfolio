@@ -53,12 +53,12 @@ export const AboutMe = () => {
 
         return(
             <AboutMeSection id="home">
-              <AboutMeBG/>
+              <AboutMeBG/> 
               <AboutMeDivJustifyCenter>
                 <div>
                   <TrackVisibility>
                     {({ isVisible }) =>
-                    <div className={isVisible ? "animate__animated animate__jello" : ""}>
+                    <div className={"animate__animated animate__zoomIn"}>
                       <AboutMeSpan>Welcome to my Portfolio</AboutMeSpan>
                       <AboutMeH1>{`Hi! I'm Max , `} </AboutMeH1>
                       <AboutMeH1> <span data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "Sys Engineer" ]'><AboutMeSpanTxtRotate>{text}</AboutMeSpanTxtRotate></span></AboutMeH1>

@@ -18,7 +18,8 @@ export const SkillsHeader = styled.div`
      p {
         width: 80%;
         margin: auto;
-        text-align: justify;
+        text-align: center;
+        padding-bottom: 1.56rem;
      }
     h4 { 
         

@@ -16,6 +16,7 @@ export const AboutMeCharacterContainer = styled.div `
     height: 100%;
     overflow: hidden;
     top:0;
+    opacity: var(--opacity);
 `;
 
 export const AboutMeCharacter = styled.div `
@@ -104,12 +105,6 @@ export const AboutMeButton = styled.button `
         transition: 0.3s ease-in-out;
         line-height: 1;
     };
-    &:hover{
-        & svg{
-            margin-left: 25px;
-        }
-        
-    }
  `;
 
 export const AboutMeImg = styled.img ` 

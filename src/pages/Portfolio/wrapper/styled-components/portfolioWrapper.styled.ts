@@ -34,7 +34,7 @@ export const PortfolioWrapperNav = styled.nav`
         margin-right: auto;
         text-align: center;
         transition: all .5s ease;
-        
+        cursor: pointer;
         a {
             display: block;
             font-size: 2rem;
