@@ -9,8 +9,6 @@ app.use(cors());
 app.use(express.json)
 app.use("/",router);
 app.listen(5000, () => console.log("Server Running"));
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
@@ -29,17 +27,17 @@ contactEmail.verify((error ) => {
 });
 
 router.post("/contact", (req, res) => {
-    const name = req.body.firstName + req.body.lastName ;
+    const name = req.body.name ;
     const email = req.body.email;
     const message = req.body.message;
-    const phone = req.body.phone;
+    const company = req.body.company;
     const mail = {
         from: name,
-        to: "**********@gmail.com",
+        to: email,
         subject: "Contact Form Submission - Portfolio",
         html: `<p> Name: ${name} </p>
             <p> Email: ${email} </p>
-            <p> Phone: ${phone} </p>
+            <p> Company: ${company} </p>
             <p> Message: ${message} </p>`
     };
 contactEmail.sendMail(mail, (error ) => {

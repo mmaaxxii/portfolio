@@ -3,7 +3,7 @@ import axios, { AxiosResponse } from "axios";
 
 
 
-export const url = "http://localhost:5000";
+export const url = "http://localhost:5000/contact";
 
 export const contactSendEmail =  (contactRequest: ContactType) : string => {
    axios.post<AxiosResponse>(url, {
