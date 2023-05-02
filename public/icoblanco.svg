@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30px" height="30px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 10 10"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="671" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Centra No2">
+		<font-face-src>
+			<font-face-name name="Centra No2"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="&gt;" horiz-adv-x="600" d="M512.006 294.003l-423.005 -205.003 0 84.9963 331.002 158.006 -331.002 157.993 0 86.9983 423.005 -204.99 0 -78.0021z"/>
+   <glyph unicode="/" horiz-adv-x="449" d="M76.0001 -99.9987l-85.9973 0 368.001 865.004 85.9973 0 -368.001 -865.004z"/>
+   <glyph unicode="E" horiz-adv-x="536" d="M90.0014 700.004l388.997 0 0 -82.0062 -299.996 0 0 -213.999 279.001 0 0 -81.0052 -279.001 0 0 -240.988 301.998 0 0 -82.0062 -390.999 0 0 700.004z"/>
+   <glyph unicode="M" horiz-adv-x="937" d="M846.999 700.004l0 -700.004 -86.9983 0 0 545.001 -260.995 -545.001 -61.0106 0 -260.995 545.001 0 -545.001 -86.9983 0 0 700.004 107.994 0 272.006 -575.006 271.993 575.006 105.004 0z"/>
+   <glyph unicode="&lt;" horiz-adv-x="600" d="M87.9994 372.005l423.005 204.99 0 -84.9963 -330.001 -157.993 330.001 -158.006 0 -86.9983 -423.005 205.003 0 78.0021z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Centra No2";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str0 {stroke:white;stroke-width:0.0802938}
+    .fil1 {fill:#F30889}
+    .fil0 {fill:white}
+    .fnt0 {font-weight:normal;font-size:3.08814px;font-family:'Centra No2'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0 str0" cx="5" cy="5" r="5"/>
+  <text x="0" y="6"  class="fil1 fnt0">&lt;ME/&gt;</text>
+ </g>
+</svg>

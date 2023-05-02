@@ -7,7 +7,8 @@ export default function Projects() {
   const imgISO = "/assets/img/iso.jpeg"
   const imgTC = "/assets/img/tuc.jpeg"
   const imgBar = "/assets/img/bar.jpeg"
-  const imgGlobal = "/assets/img/GoblaNFT.png"
+  const imgGlobal = "/assets/img/Goblal.jpg"
+  const imgMA = "/assets/img/Muni.jpeg"
 
   return (
     <ProjectsDiv>
@@ -69,13 +70,13 @@ export default function Projects() {
           <Grid item xs={10} md= {5.5} lg={3.5}  >
             
             <ProjectCard 
-              logo='TM' 
+              logo='MA' 
               color='deepOrange[500]'
-              title='Tucuman Mascotas' 
+              title='Muni App' 
               date='in course since 2018' 
-              short={'The app has the database of all the pets of the province of Tucuman and let the community to schedule the castration of their pets'}
-              img={imgTC}
-              alt='Tucuman Mascotas'
+              short={'The app has create to provide many services to the community of Tucuman.'}
+              img={imgMA}
+              alt='Muni App'
               detail='System created with the purpose of managing the database of pets of the province of Tucuman. Created in ASP.NET. Currently in operation in the domain https://mascotas.tucuman.gob.ar'
               web={true}
               mobile={true}/>

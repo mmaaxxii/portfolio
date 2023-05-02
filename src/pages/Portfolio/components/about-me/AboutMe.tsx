@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import styled from "styled-components";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "./assets/img/header-img.png"
+import headerImg from "./assets/img/escritorio.png"
 import 'animate.css' 
 import TrackVisibility from 'react-on-screen';
 import {AboutMeSection, AboutMeDivJustifyCenter, AboutMeSpan, AboutMeH1, AboutMeP, AboutMeButton, AboutMeImg, AboutMeSpanTxtRotate, AboutMeCharacter, AboutMeCharacterContainer, AboutMeButtonsDiv } from "./styled-components/aboutMe.styled";
