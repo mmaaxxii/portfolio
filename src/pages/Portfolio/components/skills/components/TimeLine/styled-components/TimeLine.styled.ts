@@ -18,6 +18,10 @@ export const TimeLineContainer = styled.div`
         font-family: "Centra";
      }
 
+     div {
+        font-family: "Centra";
+     }
+
     
 `
 
@@ -26,6 +30,7 @@ export const TimeLineHeader = styled.div`
     h4 { 
         
         text-align: left;
+        padding-left: 20px;
      }
     span {
         font-size: 2rem;

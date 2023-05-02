@@ -85,7 +85,8 @@ export const AboutMeP = styled.p `
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    width: 96%;
+    width: 100%;
+    text-align: center;
  `;
 
 export const AboutMeButton = styled.button ` 
@@ -134,7 +135,7 @@ export const AboutMeDivJustifyCenter = styled.div `
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
-    padding: 20% 0;
+    padding: 100px 0;
  `;
 
  export const AboutMeButtonsDiv = styled.div `

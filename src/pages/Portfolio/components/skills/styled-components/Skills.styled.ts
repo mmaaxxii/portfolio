@@ -25,6 +25,7 @@ export const SkillsHeader = styled.div`
         
         padding: 10px;
         text-align: left;
+        padding-left: 50px;
      }
     span {
         color: var(--main-color);

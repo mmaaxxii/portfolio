@@ -5,7 +5,7 @@ export const PortfolioWrapperNav = styled.nav`
     align-items: center;
     padding: .4rem;
     justify-content: space-between;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: var(--navbarShadow);
     width: 100%;
     position: fixed;
     top: 0;
@@ -82,6 +82,10 @@ export const PortfolioWrapperNav = styled.nav`
     .switch {
         background-color: var(--bg);
         color: var(--color);
+        cursor: pointer;
+        &:hover {
+            color: var(--main-color);
+        }
         @media (max-width: 768px) {
             position: relative;
             display: inline-block;

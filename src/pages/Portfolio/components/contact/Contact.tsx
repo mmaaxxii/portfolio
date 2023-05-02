@@ -11,17 +11,21 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
 
  function Contact() {
 
+  
+
   useEffect( () => {
     const inputs = document.querySelectorAll('.contact-input');
-  inputs.forEach( (input) => {
+    type inputType = ReturnType<typeof inputs>;
+
+  inputs.forEach( (input : inputType) => {
     input.addEventListener("focus", () => {  
       input.parentElement?.classList.add("focus");          
       input.parentElement?.classList.add("not-empty");          
       }); 
     input.addEventListener('blur', () => {
-      //if (input.value === '') { 
-        //input.parentElement?.classList.remove("not-empty");  
-      //}
+      if (input.value === '') { 
+        input.parentElement?.classList.remove("not-empty");  
+      }
 
       input.parentElement?.classList.remove("focus");
       

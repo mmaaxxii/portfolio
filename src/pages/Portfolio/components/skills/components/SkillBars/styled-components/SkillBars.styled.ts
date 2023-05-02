@@ -6,10 +6,10 @@ export const SkillBarsGeneralDiv = styled.div `
     width: 90%;
     margin: 0px auto;
     color: var(--color);
-    padding: 20px;
+    padding: 0px;
     @media (max-width:768px) {
 	
-		width: 90%;
+		width: 100%;
 		
 	}
 
@@ -21,6 +21,7 @@ export const SkillBarsGeneralDiv = styled.div `
     
     h4 {
         text-align: left;
+        padding-left: 20px;
     }
 
     span {
@@ -113,7 +114,7 @@ export const SkillBarsGeneralDiv = styled.div `
     }
 
     .poo { 
-        width: 80%;
+        width: 90%;
         animation: poo 3s;
     }
     @keyframes poo {
@@ -121,7 +122,7 @@ export const SkillBarsGeneralDiv = styled.div `
             width: 0%;
         }
         100% {
-            width: 80%;
+            width: 90%;
         }
     }
     .sql { 
@@ -161,6 +162,3 @@ export const SkillBarsGeneralDiv = styled.div `
     }
 
 `;
-
-
-

@@ -74,6 +74,7 @@ span {
   --input-bg-hover: hsla(208, 50%, 50%, 14%);
   --bgImg: url("/src/pages/Portfolio/components/about-me/assets/img/banner-bgd.png");
   --opacity: 100;
+  --navbarShadow: 0 2px 10px rgba(255, 255, 255, 0.4);
 }
 
 [data-theme= "light"] {
@@ -84,6 +85,7 @@ span {
   --input-bg-hover: hsla(208, 50%, 50%, 14%);
   --bgImg: url("/src/pages/Portfolio/components/about-me/assets/img/banner-bg.png");
   --opacity: ;
+  --navbarShadow: 0 2px 10px rgba(0,0,0,0.1);
 }
  
 
