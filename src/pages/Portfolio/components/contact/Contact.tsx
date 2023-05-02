@@ -14,10 +14,9 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
   
 
   useEffect( () => {
-    const inputs = document.querySelectorAll('.contact-input');
-    type inputType = ReturnType<typeof inputs>;
-
-  inputs.forEach( (input : inputType) => {
+    
+    const inputs: NodeListOf<HTMLInputElement> = document.querySelectorAll('.contact-input');
+    inputs.forEach( (input : HTMLInputElement) => {
     input.addEventListener("focus", () => {  
       input.parentElement?.classList.add("focus");          
       input.parentElement?.classList.add("not-empty");          
@@ -29,7 +28,7 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
 
       input.parentElement?.classList.remove("focus");
       
-
+  
         });
 
     });
