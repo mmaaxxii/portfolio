@@ -7,11 +7,12 @@ import contactImg from './assets/img.jpg'
 import { ContactType } from '@/models';
 import 'animate.css';
 import { registerNewContact } from '@/pages/Login/services/firebase';
+import { contactSendEmail } from './components/ContactSendEmail';
 
 
  function Contact() {
 
-  
+  const [buttonText, setButtonText] = useState("Send")
 
   useEffect( () => {
     
@@ -44,7 +45,7 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
   const handleSubmit = (e : React.FormEvent) => {
 
     e.preventDefault();
-
+    setButtonText("Sending...")
     const data = new FormData(e.target as HTMLFormElement);
 
     const contactRequest : ContactType = {
@@ -54,9 +55,17 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
       message: data.get('Message')?.toString()!,
     };
 
+    const sendEmail = async (contactRequest: ContactType) => {
+      const  res: string  = await contactSendEmail(contactRequest)
+      return res
+    }
+
     registerNewContactFunc(contactRequest);
 
-    
+    //i need send a mail to the owner of the website and the user
+    sendEmail(contactRequest)
+    setButtonText("Send")
+
   }
 
   return (
@@ -66,7 +75,7 @@ import { registerNewContact } from '@/pages/Login/services/firebase';
             <div className='form-wrapper'>
               <div className='contact-heading'>
                 <h1 className='animate__animated animate__bounceInDown'>Get in touch <span>.</span></h1>
-                <p className='text'>Or reach us via : <a href='mailto:maximilianoespeche@gmail.com'>maximilianoespeche@gmail.com</a></p>
+                <p className='text'>Or reach us via : <a href='mailto:maximilianoespeche@gmail.com'>maximilianoespeche<span>@</span>gmail<span>.</span>com</a></p>
               </div>
               <div className='animate__animated animate__fadeIn'>
                 <form action='index.html' method='post' className='contact-form'  onSubmit={handleSubmit}> 

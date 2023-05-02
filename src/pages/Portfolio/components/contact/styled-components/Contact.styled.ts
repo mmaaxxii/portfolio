@@ -44,15 +44,18 @@ export const ContactSection = styled.section`
     }
     
     .text {
-        color: var(--color);
         line-height: 1.1;
         font-size: 1rem;
         & a {
-            color: var(--main-color);
+            
+            color: var(--color);
             transition: 0.3s;
             &:hover {
-                color: var(--color);
+                color: var(--main-color);
             }
+        }
+        & span {
+            color: var(--main-color);
         }
     }
 
