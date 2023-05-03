@@ -9,6 +9,9 @@ export default function Projects() {
   const imgBar = "/assets/img/bar.jpeg"
   const imgGlobal = "/assets/img/global.jpg"
   const imgMA = "/assets/img/Muni.jpeg"
+  const imgST = "/assets/img/IT2.jpg"
+
+  
 
   return (
     <ProjectsDiv>
@@ -84,16 +87,16 @@ export default function Projects() {
           <Grid item xs={10} md= {5.5} lg={3.5} >
             
             <ProjectCard 
-              logo='GA' 
+              logo='ST' 
               color='deepOrange[500]'
-              title='Gastronomic App' 
-              date='in course since 2016' 
-              short={'The app has being create for the management of a gastronomic business. It has the ability to manage the menu, the orders, the clients and the employees'}
-              img={imgBar}
-              alt='Gastronomic App'
-              detail='App created on Genexus, has multiple modules that allow adapt the software 100% to the requeriments of the client.'
-              web={true}
-              mobile={true}/>
+              title='Structured Cabling Solutions' 
+              date='in course since 2018' 
+              short={'Design and implementation of structured cabling projects for high-speed and high-performance network infrastructures'}
+              img={imgST}
+              alt='Structured Cabling Solutions'
+              detail=' I have installed Cat 6 cables, IP phone lines, cameras, and Ethernet networks on a single rack system to provide high-speed and high-performance network solutions.'
+              web={false}
+              mobile={false}/>
           </Grid>
         </Grid>
       
