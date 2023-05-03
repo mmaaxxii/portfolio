@@ -1,18 +1,17 @@
-import { ContactType } from "@/models";
-import axios, { AxiosResponse } from "axios";
+import emailjs from '@emailjs/browser';
 
 
 
-export const url = "https://portfolio-mmaaxxii.vercel.app:5000/contact";
+export default async function ContactSendEmail (form : HTMLFormElement ) : Promise <Boolean> {
 
-export const contactSendEmail =  (contactRequest: ContactType) : string => {
-   axios.post<AxiosResponse>(url, {
-    method: "POST",
-    headers: {
-        "Content-Type": "Application/json;charset=urf-8",
-    },
-    body: JSON.stringify(contactRequest),
-    } )
-    .then((res) => (res.data))
-    return "ok"
-};
+    try { 
+        emailjs.sendForm(import.meta.env.VITE_BASE_YOUR_SERVICE_ID , import.meta.env.VITE_BASE_YOUR_TEMPLATE_ID, form , import.meta.env.VITE_BASE_YOUR_PUBLIC_KEY)
+        .then((result) => {
+            console.log(result.text);
+        });
+       return true 
+    } catch (error) {
+        console.log(error);
+        return false
+    }
+} 

@@ -1,8 +1,16 @@
 
 export interface ContactType {
     uid?: string
-    name: string
-    company?: string
-    email: string
-    message: string 
+    Name: string
+    Company?: string
+    Email: string
+    Message: string 
 };
+
+export const ContactEmptyForm = {
+    Name: '',
+    Company: '',
+    Email: '',
+    Message: ''
+};
+

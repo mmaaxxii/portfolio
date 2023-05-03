@@ -40,8 +40,7 @@ export const PortfolioWrapperNav = styled.nav`
             font-size: 2rem;
             //border-bottom: solid 2px transparent;
             &:hover {
-                //border-bottom: solid 2px #222;
-                
+                color: var(--main-color);
             }
         }
         @media (min-width: 768px) {
@@ -85,6 +84,7 @@ export const PortfolioWrapperNav = styled.nav`
         cursor: pointer;
         &:hover {
             color: var(--main-color);
+            
         }
         @media (max-width: 768px) {
             position: relative;
