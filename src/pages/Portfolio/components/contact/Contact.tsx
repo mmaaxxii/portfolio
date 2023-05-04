@@ -52,7 +52,7 @@ function Contact() {
     e.preventDefault();
     setButtonText("Sending...");
 
-    const sendEmail = (e: React.FormEvent) => {
+    const sendEmail = async (e: React.FormEvent) => {
       try {
         emailjs.sendForm(import.meta.env.VITE_BASE_YOUR_SERVICE_ID, import.meta.env.VITE_BASE_YOUR_TEMPLATE_ID, e.target as HTMLFormElement, import.meta.env.VITE_BASE_YOUR_PUBLIC_KEY)
           .then((result) => { console.log(result.text) })
