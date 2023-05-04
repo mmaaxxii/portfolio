@@ -23,7 +23,7 @@ function App() {
             <BrowserRouter>
               <RoutesWithNotFound>
                 <Route path='/' element={<Portfolio route={PublicRoutes.ABOUTME}/>} />
-                {/*<Route path='/asd' element={<Navigate to={PrivateRoutes.PRIVATE} />} /> */}
+                {/* <Route path='/asd' element={<Navigate to={PrivateRoutes.PRIVATE} />} /> */}
                 <Route path={PublicRoutes.ABOUTME} element={<Portfolio route={PublicRoutes.ABOUTME}/>} />
                 <Route path={PublicRoutes.SKILLS} element={<Portfolio route={PublicRoutes.SKILLS}/>} />
                 <Route path={PublicRoutes.PROJECTS} element={<Portfolio route={PublicRoutes.PROJECTS}/>} />
