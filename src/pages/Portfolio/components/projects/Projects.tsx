@@ -94,7 +94,7 @@ export default function Projects() {
               short={'Design and implementation of structured cabling projects for high-speed and high-performance network infrastructures'}
               img={imgST}
               alt='Structured Cabling Solutions'
-              detail=' I have installed Cat 6 cables, IP phone lines, cameras, and Ethernet networks on a single rack system to provide high-speed and high-performance network solutions.'
+              detail='Experience with Cisco Packet Tracer. I have installed Cat 6 cables, IP phone lines, cameras, and Ethernet networks on a single rack system to provide high-speed and high-performance network solutions.'
               web={false}
               mobile={false}/>
           </Grid>

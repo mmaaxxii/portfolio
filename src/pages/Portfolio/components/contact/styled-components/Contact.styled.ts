@@ -71,6 +71,7 @@ export const ContactSection = styled.section`
     }
     .input-wrap {
         position: relative;
+        margin-bottom: 10px;
         &.w-100 {
             grid-column: span 2;
         }
@@ -193,6 +194,7 @@ export const ContactSection = styled.section`
         .img {
         position: absolute;
         height: 100%;
+        min-width: 800px;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -226,7 +228,7 @@ export const ContactSection = styled.section`
 
     .dashed-wave {
         position: absolute;
-        z-index: 3;
+        z-index: 2;
         height: 130%;
         bottom: 60%;
         left: -28px;
@@ -279,6 +281,7 @@ export const ContactSection = styled.section`
             border-radius: 17px;
             font-size: 0.87rem;
             padding: 1.5rem 1.2rem calc(0.75rem - 2px) 1.2rem;
+            background-color: var(--bg);
         }
 
         .input-wrap label {
@@ -305,7 +308,7 @@ export const ContactSection = styled.section`
 
         .contact-buttons {
             column-gap: 0.8rem;
-            margint-top: 0.45rem; 
+            margin-top: 0.45rem; 
         }
 
         .btn {
@@ -331,6 +334,10 @@ export const ContactSection = styled.section`
             height: calc(110% + 10px);
             transform: translate(-5%, -50%);
         }
+
+        
+
+    
     }
 
     @media (max-width: 650px) {
@@ -341,6 +348,7 @@ export const ContactSection = styled.section`
             padding: 50px 1.5rem 0;
             grid-template-columns: 1fr;
             justify-items: center;
+            background-color: transparent;
         }
         
         .form-wrapper {
@@ -359,13 +367,26 @@ export const ContactSection = styled.section`
         }
 
         .right {
-            display: none;
+            //display: none;
+            img {
+                //display: none;
+                
+
+            }
         }
 
+        .image-wrapper {
+        position: relative;
+        grid-column: span 2;
+        img {
+            opacity: 0.7;
+        }
+        }
         
     }
 
     @media (max-width: 440px) {
+        
         .input-wrap {
              grid-column: span 2;
         }
