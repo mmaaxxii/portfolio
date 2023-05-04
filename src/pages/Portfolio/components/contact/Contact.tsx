@@ -3,7 +3,7 @@ import { ContactSection } from './styled-components/Contact.styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressCard, faEnvelope, faInbox, faBuilding } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
-import contactImg from './assets/img.jpg'
+import contactImg from './assets/contactImg.jpeg'
 import { ContactEmptyForm, ContactType } from '@/models';
 import 'animate.css';
 import { registerNewContact } from '@/pages/Login/services/firebase';
