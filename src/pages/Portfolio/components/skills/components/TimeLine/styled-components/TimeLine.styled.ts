@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 export const TimeLineContainer = styled.div`
-     margin-top: 30px;
+     margin-top: 0px;
      margin-bottom: 3rem;
      h1 { 
         padding: 8px;
