@@ -6,7 +6,7 @@ export const ContactSection = styled.section`
     max-width: 100%;
     overflow: hidden;
     background-color: var(--bg);
-    
+    overflow-x: hidden;
     .container {
         height: 100vh;
         min-height: 700px;
@@ -133,7 +133,7 @@ export const ContactSection = styled.section`
 
     .input-wrap.focus .contact-input {
         background-color: var(--bg);
-        /* border: 2px solid  var(--main-color); */
+        border: 2px solid  var(--main-color);
         box-shadow: 0 0 0 2px var(--input-bg-hover);  
     }
 
