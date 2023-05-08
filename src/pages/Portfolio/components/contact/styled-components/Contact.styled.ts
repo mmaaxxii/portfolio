@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 export const ContactSection = styled.section`
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
     background-color: var(--bg);
     
@@ -118,7 +118,7 @@ export const ContactSection = styled.section`
     textarea {
         &.contact-input {
             resize: none;
-            width: 100%;
+            /* width: 100%; */
             min-height: 150px;
             &~label {
                 top: 1.2rem;

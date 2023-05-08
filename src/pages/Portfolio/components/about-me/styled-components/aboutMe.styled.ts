@@ -73,7 +73,7 @@ export const AboutMeSpan = styled.span `
  `;
 
 export const AboutMeH1 = styled.h1 ` 
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1;
