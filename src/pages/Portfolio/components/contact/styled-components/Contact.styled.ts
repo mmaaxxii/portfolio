@@ -150,6 +150,7 @@ export const ContactSection = styled.section`
         top: 0.75rem;
         transform: translateY(0);
     }
+        
     .contact-buttons {
         display: grid;
         grid-template-columns: 1fr ;

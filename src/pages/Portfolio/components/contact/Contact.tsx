@@ -28,9 +28,9 @@ function Contact() {
       input.addEventListener('blur', () => {
         if (input.value === '') {
           input.parentElement?.classList.remove("not-empty");
+          input.parentElement?.classList.remove("focus");
         }
-
-        input.parentElement?.classList.remove("focus");
+        
 
 
       });
