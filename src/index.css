@@ -47,6 +47,7 @@ span {
 }
 
 input, select, textarea {
+  max-zoom: 1;
   -webkit-text-size-adjust: none;
 }
 
