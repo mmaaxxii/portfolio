@@ -25,7 +25,7 @@ export const PortfolioWrapperNav = styled.nav`
             margin-right: 1rem;
     }
     .links {
-        
+         
         position: absolute;
         top: -700px;
         left: -1000px;
