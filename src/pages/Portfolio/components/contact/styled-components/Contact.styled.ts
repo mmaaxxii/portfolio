@@ -110,6 +110,7 @@ export const ContactSection = styled.section`
         border: 1px solid var(--main-color);
         box-shadow: 0 0 0 1px var(--main-color);
         transition: 0.3s;
+        -webkit-text-size-adjust: none;
         &:hover {
             background-color: var(--input-bg-hover);
         }
