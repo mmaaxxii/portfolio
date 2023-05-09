@@ -9,13 +9,10 @@ import 'animate.css';
 import { registerNewContact } from '@/pages/Login/services/firebase';
 import { ContactSendEmail } from './components/ContactSendEmail';
 
-import emailjs from '@emailjs/browser';
-
 function Contact() {
 
   const [buttonText, setButtonText] = useState<string>("Send")
   const [form, setForm] = useState<ContactType>(ContactEmptyForm);
-
 
   useEffect(() => {
 
@@ -38,11 +35,9 @@ function Contact() {
     });
   }, [])
 
-
   async function registerNewContactFunc(contactRequest: ContactType) {
     await registerNewContact(contactRequest);
   }
-
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({...form, [e.target.name]: e.target.value})
@@ -50,16 +45,15 @@ function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setButtonText("Sending...");
+    setButtonText("Sending..."); 
 
     const sendEmail = async (e: React.FormEvent) => {
+      const form = e.target as HTMLFormElement;
       try {
-        emailjs.sendForm(import.meta.env.VITE_BASE_YOUR_SERVICE_ID, import.meta.env.VITE_BASE_YOUR_TEMPLATE_ID, e.target as HTMLFormElement, import.meta.env.VITE_BASE_YOUR_PUBLIC_KEY)
-          .then((result) => { console.log(result.text) })
+        ContactSendEmail(form).then((result) => { console.log(result.text) })
           .then(() => {
             setButtonText("Sended");
-            (e.target as HTMLFormElement).reset();
-            
+            form.reset();
           });
       } catch (error) {
         setButtonText("Try Again")
@@ -71,7 +65,6 @@ function Contact() {
     sendEmail(e)
     
   }
-
 
   return (
     <ContactSection>
@@ -140,5 +133,4 @@ function Contact() {
     </ContactSection>
   )
 }
-
 export default Contact;
