@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
+  
 }
 
 
@@ -50,6 +50,7 @@ input, select, textarea {
   max-zoom: 1;
   min-zoom: 1;
   -webkit-text-size-adjust: none;
+  size-adjust: none;
 }
 
 .transition {
