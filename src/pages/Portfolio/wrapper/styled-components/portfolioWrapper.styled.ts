@@ -23,6 +23,7 @@ export const PortfolioWrapperNav = styled.nav`
     a {
             text-decoration: none;
             margin-right: 1rem;
+            
     }
     
     .links {

@@ -14,7 +14,7 @@ import Typography from '@mui/material/Typography';
 import { TimeLineContainer, TimeLineHeader } from './styled-components';
 import AdbIcon from '@mui/icons-material/Adb';
 import AppleIcon from '@mui/icons-material/Apple';
-
+import Diversity3Icon from '@mui/icons-material/Diversity3';
 
 export default function CustomizedTimeline() {
     return (
@@ -172,6 +172,31 @@ export default function CustomizedTimeline() {
                             React Developer
                         </h1>
                         <p >Learning by my own!</p>
+                    </TimelineContent>
+                </TimelineItem>
+
+
+                <TimelineItem>
+                    <TimelineOppositeContent
+                        sx={{ m: 'auto 0' }}
+                        align="right"
+                        variant="body2"
+                        
+                    >
+                        2023
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                        <TimelineConnector />
+                        <TimelineDot  >
+                            <Diversity3Icon />
+                        </TimelineDot>
+                        <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                    </TimelineSeparator>
+                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <h1 >
+                            Certified Scrum Master
+                        </h1>
+                        <p >Certified by Scrum Alliance </p>
                     </TimelineContent>
                 </TimelineItem>
 

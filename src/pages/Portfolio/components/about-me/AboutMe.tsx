@@ -11,7 +11,7 @@ import { AboutMeBG, AboutMeSocialButtons } from "./componets";
 export const AboutMe = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false)
-  const toRotate = ["Web Developer", "Web Designer", "Sys Engineer"]
+  const toRotate = ["Sys Engineer", "Certified Scrum Master", "Web Developer", ]
   const [text, setText] = useState('')
   const [delta, setDelta] = useState(300 - Math.random() * 100)
   const [index, setIndex] = useState(1);
@@ -61,7 +61,7 @@ export const AboutMe = () => {
               <div className={"animate__animated animate__zoomIn"}>
                 <AboutMeH1>{`Hi! I'm Max , `} </AboutMeH1>
                 <AboutMeH1> <span data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "Sys Engineer" ]'><AboutMeSpanTxtRotate>{text}</AboutMeSpanTxtRotate></span></AboutMeH1>
-                <AboutMeP>System engineer, senior Genexus developer, more than 10 years producing code. </AboutMeP>
+                <AboutMeP>System engineer, Certified Scrum Master, senior Genexus developer, more than 10 years producing code. </AboutMeP>
                 <AboutMeButtonsDiv >
                   <AboutMeSocialButtons />
                 </AboutMeButtonsDiv>

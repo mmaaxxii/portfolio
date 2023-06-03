@@ -4,7 +4,14 @@ export default function SkillBars() {
     <SkillBarsGeneralDiv className="skill">
         
         <h4><span>.</span>Skills</h4>
-
+        <li>
+            <h3>Agile Methodologies</h3>
+            <span className="bar"><span className="agile"></span></span>
+        </li>
+        <li>
+            <h3>Scrum exp</h3>
+            <span className="bar"><span className="scrum"></span></span>
+        </li>
         <li>
             <h3>html</h3>
             <span className="bar"><span className="html"></span></span>

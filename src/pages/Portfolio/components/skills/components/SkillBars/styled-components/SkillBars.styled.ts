@@ -49,6 +49,33 @@ export const SkillBarsGeneralDiv = styled.div `
         background: linear-gradient(135deg, rgba(236,0,140,1) 0%, rgba(252,103,103,1) 100%);
 
     }
+    
+    .agile { 
+        width: 100%;
+        animation: html 3s;
+    }
+    @keyframes agile {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    .scrum { 
+        width: 100%;
+        animation: html 3s;
+    }
+    @keyframes scrum {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+    
     .html { 
         width: 80%;
         animation: html 3s;
