@@ -66,6 +66,10 @@ interface Props {
     }
   }
 
+  const handleClickResume = () => {
+
+  }
+
   return (
     <> 
         <PortfolioWrapperNav>

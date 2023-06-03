@@ -139,6 +139,23 @@ export const AboutMeDivJustifyCenter = styled.div `
     justify-content: center;
     align-items: center;
     padding: 100px 0;
+
+    .resume {
+        color: var(--main-color);
+        position: relative;
+        top: 10px;
+        font-size: 25px;
+        & span {
+            font-size: 25px;
+            font-weight: 200;
+            color: var(--color);
+        }
+    }
+
+        @media (max-width: 768px) {
+        
+    }
+
  `;
 
  export const AboutMeButtonsDiv = styled.div `
@@ -146,4 +163,5 @@ export const AboutMeDivJustifyCenter = styled.div `
     display: flex;
     flex-direction: row;
     flex-wrap: wrap ;
+    margin-top: -30px;
 `;

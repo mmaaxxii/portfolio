@@ -11,7 +11,7 @@ import { AboutMeBG, AboutMeSocialButtons } from "./componets";
 export const AboutMe = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false)
-  const toRotate = ["Sys Engineer", "Certified Scrum Master", "Web Developer", ]
+  const toRotate = ["Sys Eng", "CSM", "Web Dev", ]
   const [text, setText] = useState('')
   const [delta, setDelta] = useState(300 - Math.random() * 100)
   const [index, setIndex] = useState(1);
@@ -50,6 +50,10 @@ export const AboutMe = () => {
     }
   }
 
+  const start = '<';
+  const end = '/>';
+
+
 
   return (
     <AboutMeSection id="home">
@@ -62,6 +66,8 @@ export const AboutMe = () => {
                 <AboutMeH1>{`Hi! I'm Max , `} </AboutMeH1>
                 <AboutMeH1> <span data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "Sys Engineer" ]'><AboutMeSpanTxtRotate>{text}</AboutMeSpanTxtRotate></span></AboutMeH1>
                 <AboutMeP>System engineer, Certified Scrum Master, senior Genexus developer, more than 10 years producing code. </AboutMeP>
+                <a  href="/MaximilianoEspeche.pdf" download="MaximilianoEspeche.pdf" className='resume'>{start}<span>resume</span>{end}</a>
+                
                 <AboutMeButtonsDiv >
                   <AboutMeSocialButtons />
                 </AboutMeButtonsDiv>
