@@ -65,7 +65,7 @@ export default function CustomizedTimeline() {
                         </TimelineSeparator>
                         <TimelineContent >
                             <h1 >First Android App </h1>
-                            <p  >Comicios, app created for count votes in a local election</p>
+                            <p  >Comicios. App created to count votes in a local election</p>
                         </TimelineContent>
                     </TimelineItem>
 
@@ -119,7 +119,7 @@ export default function CustomizedTimeline() {
                         <h1 >
                             First iOS App
                         </h1>
-                        <p >Published and working between 2018 and 2021 </p>
+                        <p >Published and worked between 2018 and 2021 </p>
                     </TimelineContent>
                 
                 </TimelineItem>
